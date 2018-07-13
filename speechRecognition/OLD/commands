@@ -1,0 +1,5 @@
+pulseaudio --kill
+pulseaudio --start
+
+jack_control exit
+jack_control start
