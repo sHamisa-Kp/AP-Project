@@ -60,13 +60,13 @@ public:
     PowerBall *powerball;
     TextDrawing *text;
     QString name, difficultyText; // the text used for the name and difficulty on last screen
-/// These integers contain values of location on screen and directions
+    /// These integers contain values of location on screen and directions
     int pacx,pacy,direction,nextdirection;
     int gosx,gosy,ghostdir,nextghostdir;
     int gosx1,gosy1,ghostdir1,nextghostdir1;
     int gosx2,gosy2,ghostdir2,nextghostdir2;
     int gosx3,gosy3,ghostdir3,nextghostdir3;
-/// This contains bools for if the states they are in
+    /// This contains bools for if the states they are in
     bool moving,ghostmoving,ghostmoving1,ghostmoving2,ghostmoving3;
     bool scared,scared1,scared2,scared3;
     int score,hiscore,state3,state2,state1,state,lives,level,difficulty;
@@ -85,20 +85,16 @@ public slots:
 protected:
     void keyPressEvent(QKeyEvent *event);
 
-
-
 private slots:
-
     int timeoutTime() { return 1000 / (2); }
     void on_pauseButton_clicked();
     void on_controlsButton_clicked();
-
 
 private:
     Ui::Pacmanwindow *ui;
     QGraphicsScene *scene;
     QTimer *timer;
     QTimer *ghoststimer;
-    };
+};
 
 #endif // PACMANWINDOW_H

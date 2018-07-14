@@ -1,4 +1,3 @@
-
 #ifndef OPTIONS_H
 #define OPTIONS_H
 
@@ -16,14 +15,14 @@ class Options : public QWidget
 public:
     explicit Options(QWidget *parent = 0);
     ~Options();
- QString mes;
- int difficulty;
+    QString mes;
+    int difficulty;
 private slots:
 
     void on_startButton_clicked();
-//    void easy(bool);
-//    void medium(bool);
-//    void hard(bool);
+    //    void easy(bool);
+    //    void medium(bool);
+    //    void hard(bool);
 
 
     void on_easyButton_toggled(bool checked);

@@ -37,34 +37,34 @@ void Ghost::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWi
     painter->setOpacity(0.5); // makes the ghosts actually look like ghosts
     if(!is_Scared){
         switch(direction){
-            case 1:
-                if(animestate==0){
-                    painter->drawPixmap(gosx-15,gosy-15,30,30,left1);
-                }else{
-                    painter->drawPixmap(gosx-15,gosy-15,30,30,left2);
-                }
-                break;
-            case 4:
-                if(animestate==0){
-                    painter->drawPixmap(gosx-15,gosy-15,30,30,right1);
-                }else{
-                    painter->drawPixmap(gosx-15,gosy-15,30,30,right2);
-                }
-                break;
-            case 3:
-                if(animestate==0){
-                    painter->drawPixmap(gosx-15,gosy-15,30,30,down1);
-                }else{
-                    painter->drawPixmap(gosx-15,gosy-15,30,30,down2);
-                }
-                break;
-            case 2:
-                if(animestate==0){
-                    painter->drawPixmap(gosx-15,gosy-15,30,30,up1);
-                }else{
-                    painter->drawPixmap(gosx-15,gosy-15,30,30,up2);
-                }
-                break;
+        case 1:
+            if(animestate==0){
+                painter->drawPixmap(gosx-15,gosy-15,30,30,left1);
+            }else{
+                painter->drawPixmap(gosx-15,gosy-15,30,30,left2);
+            }
+            break;
+        case 4:
+            if(animestate==0){
+                painter->drawPixmap(gosx-15,gosy-15,30,30,right1);
+            }else{
+                painter->drawPixmap(gosx-15,gosy-15,30,30,right2);
+            }
+            break;
+        case 3:
+            if(animestate==0){
+                painter->drawPixmap(gosx-15,gosy-15,30,30,down1);
+            }else{
+                painter->drawPixmap(gosx-15,gosy-15,30,30,down2);
+            }
+            break;
+        case 2:
+            if(animestate==0){
+                painter->drawPixmap(gosx-15,gosy-15,30,30,up1);
+            }else{
+                painter->drawPixmap(gosx-15,gosy-15,30,30,up2);
+            }
+            break;
         }
     }else{
         if(whiteb){

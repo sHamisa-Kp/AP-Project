@@ -28,7 +28,7 @@ private:
     Ui::Menu *ui;
 
     void loadFile(const QString &);
-//    void setFileName(const QString &);
+    //    void setFileName(const QString &);
 
     QString m_fileName;
 

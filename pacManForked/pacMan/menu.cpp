@@ -17,7 +17,7 @@ Menu::Menu(QWidget *parent) :
 
     QPalette q;
     q.setColor(QPalette::Background, Qt::black);
-this->setPalette(q);
+    this->setPalette(q);
 }
 
 Menu::~Menu()
@@ -27,9 +27,9 @@ Menu::~Menu()
 
 void Menu::on_startButton_clicked()
 {
-Options *m = new Options;
-m->show();
-this->window()->close();
+    Options *m = new Options;
+    m->show();
+    this->window()->close();
 }
 
 
@@ -38,21 +38,21 @@ this->window()->close();
 void Menu::on_loadButton_clicked()
 {
 
-//w->show();
-//this->close();
+    //w->show();
+    //this->close();
 
 }
 
 void Menu::on_optionsButton_clicked()
 {
     Options *m = new Options;
-m->show();
-this->window()->close();
+    m->show();
+    this->window()->close();
 }
 
 void Menu::on_exitButton_clicked()
 {
-this->window()->close();
+    this->window()->close();
 }
 
 

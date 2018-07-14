@@ -9,9 +9,9 @@ Options::Options(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::Options)
 {
-    QLabel *image = new QLabel();
-       image->setPixmap( QPixmap( "paclogo.jpg" ) );
-       image->show();
+    //    QLabel *image = new QLabel();
+    //       image->setPixmap( QPixmap( "paclogo.jpg" ) );
+    //       image->show();
     ui->setupUi(this);
     difficulty = 0;
     // if the toggle buttons not checked then warn
@@ -28,25 +28,25 @@ Options::~Options()
 void Options::on_startButton_clicked()
 {
     int temp = ui->nameText->toPlainText().size();
-if (difficulty == 0 || ui->nameText->toPlainText() == "")
-{
-QMessageBox::warning(this,"Warning","You haven't filled in all criteria");
-if (temp > 9)
-{
-    QMessageBox::warning(this,"Warning","Only 9 characters allowed in the name");
+    if (difficulty == 0 || ui->nameText->toPlainText() == "")
+    {
+        QMessageBox::warning(this,"Warning","You haven't filled in all criteria");
+        if (temp > 9)
+        {
+            QMessageBox::warning(this,"Warning","Only 9 characters allowed in the name");
 
-}
-}
-else {
-Pacmanwindow *w = new Pacmanwindow;
+        }
+    }
+    else {
+        Pacmanwindow *w = new Pacmanwindow;
 
-QString nametemp = ui->nameText->toPlainText();
+        QString nametemp = ui->nameText->toPlainText();
 
-w->parseMessage(nametemp, difficulty);
+        w->parseMessage(nametemp, difficulty);
 
-    w->show();
-    this->close();
-}
+        w->show();
+        this->close();
+    }
 }
 
 

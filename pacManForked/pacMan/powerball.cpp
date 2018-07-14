@@ -18,7 +18,7 @@ QRectF PowerBall::boundingRect() const
 void PowerBall::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
 {
 
-// drawing each independat ball
+    // drawing each independat ball
     for(int i=0;i<points.size();i++){
         painter->drawPixmap(points[i].x()-5, points[i].y()-5, pBallPix);
     }

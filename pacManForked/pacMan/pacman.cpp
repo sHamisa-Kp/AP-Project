@@ -3,7 +3,7 @@
 Pacman::Pacman()
 {
     animestate=0;
-//    death=0;
+    //    death=0;
     pacx=400/2;
     pacy=360;
     x=10;
@@ -11,7 +11,7 @@ Pacman::Pacman()
     height = 23;
     width = 23;
 
-// This will load pacman images
+    // This will load pacman images
     direction=4;
     right1.load(":/images/pacround.png");
     right2.load(":/images/pacright1.png");
@@ -52,72 +52,72 @@ QRectF Pacman::boundingRect() const
 
 void Pacman::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
 {
-// sets the correct images to each direction.
+    // sets the correct images to each direction.
     switch(direction){
-        case 1:
-            if(animestate<2){
-                painter->drawPixmap(pacx-x,pacy-y,height,width,left1);
-            }else if(animestate<4){
-                painter->drawPixmap(pacx-x,pacy-y,height,width,left2);
-            }else if(animestate<6){
-                painter->drawPixmap(pacx-x,pacy-y,height,width,left3);
-            }
+    case 1:
+        if(animestate<2){
+            painter->drawPixmap(pacx-x,pacy-y,height,width,left1);
+        }else if(animestate<4){
+            painter->drawPixmap(pacx-x,pacy-y,height,width,left2);
+        }else if(animestate<6){
+            painter->drawPixmap(pacx-x,pacy-y,height,width,left3);
+        }
 
-            break;
-        case 4:
-            if(animestate<2){
-                painter->drawPixmap(pacx-x,pacy-y,height,width,right1);
-            }else if(animestate<4){
-                painter->drawPixmap(pacx-x,pacy-y,height,width,right2);
-            }else if(animestate<6){
-                painter->drawPixmap(pacx-x,pacy-y,height,width,right3);
-            }
+        break;
+    case 4:
+        if(animestate<2){
+            painter->drawPixmap(pacx-x,pacy-y,height,width,right1);
+        }else if(animestate<4){
+            painter->drawPixmap(pacx-x,pacy-y,height,width,right2);
+        }else if(animestate<6){
+            painter->drawPixmap(pacx-x,pacy-y,height,width,right3);
+        }
 
-            break;
-        case 3:
-            if(animestate<2){
-                painter->drawPixmap(pacx-x,pacy-y,height,width,down1);
-            }else if(animestate<4){
-                painter->drawPixmap(pacx-x,pacy-y,height,width,down2);
-            }
-            else if(animestate<6){
-                painter->drawPixmap(pacx-x,pacy-y,height,width,down3);
-            }
+        break;
+    case 3:
+        if(animestate<2){
+            painter->drawPixmap(pacx-x,pacy-y,height,width,down1);
+        }else if(animestate<4){
+            painter->drawPixmap(pacx-x,pacy-y,height,width,down2);
+        }
+        else if(animestate<6){
+            painter->drawPixmap(pacx-x,pacy-y,height,width,down3);
+        }
 
 
-            break;
-        case 2:
-            if(animestate<2){
-                painter->drawPixmap(pacx-x,pacy-y,height,width,up1);
-            }else if(animestate<4){
-                painter->drawPixmap(pacx-x,pacy-y,height,width,up2);
-            }else if(animestate<6){
-                painter->drawPixmap(pacx-x,pacy-y,height,width,up3);
-            }
+        break;
+    case 2:
+        if(animestate<2){
+            painter->drawPixmap(pacx-x,pacy-y,height,width,up1);
+        }else if(animestate<4){
+            painter->drawPixmap(pacx-x,pacy-y,height,width,up2);
+        }else if(animestate<6){
+            painter->drawPixmap(pacx-x,pacy-y,height,width,up3);
+        }
 
-            break;
+        break;
     }
 
-//if (death > 1){
-//    if (death < 1){
-//        painter->drawPixmap(pacx-x,pacy-y,height,width,dead1);}
-//    else if(death<2){
-//                    painter->drawPixmap(pacx-x,pacy-y,height,width,dead2);
-//                }else if(death<3){
-//                    painter->drawPixmap(pacx-x,pacy-y,height,width,dead3);
-//                }else if(death<4){
-//        painter->drawPixmap(pacx-x,pacy-y,height,width,dead4);
-//    }else if(death<5){
-//        painter->drawPixmap(pacx-x,pacy-y,height,width,dead5);
-//    }else if(death<7){
-//        painter->drawPixmap(pacx-x,pacy-y,height,width,dead6);
-//    }else if(death<8){
-//        painter->drawPixmap(pacx-x,pacy-y,height,width,dead7);
-//    }else if(death<9){
-//        painter->drawPixmap(pacx-x,pacy-y,height,width,dead8);
-//    }else if(death<10){
-//        painter->drawPixmap(pacx-x,pacy-y,height,width,dead9);
-//    }}
+    //if (death > 1){
+    //    if (death < 1){
+    //        painter->drawPixmap(pacx-x,pacy-y,height,width,dead1);}
+    //    else if(death<2){
+    //                    painter->drawPixmap(pacx-x,pacy-y,height,width,dead2);
+    //                }else if(death<3){
+    //                    painter->drawPixmap(pacx-x,pacy-y,height,width,dead3);
+    //                }else if(death<4){
+    //        painter->drawPixmap(pacx-x,pacy-y,height,width,dead4);
+    //    }else if(death<5){
+    //        painter->drawPixmap(pacx-x,pacy-y,height,width,dead5);
+    //    }else if(death<7){
+    //        painter->drawPixmap(pacx-x,pacy-y,height,width,dead6);
+    //    }else if(death<8){
+    //        painter->drawPixmap(pacx-x,pacy-y,height,width,dead7);
+    //    }else if(death<9){
+    //        painter->drawPixmap(pacx-x,pacy-y,height,width,dead8);
+    //    }else if(death<10){
+    //        painter->drawPixmap(pacx-x,pacy-y,height,width,dead9);
+    //    }}
 }
 
 // a method used to animate pacman through the three images.

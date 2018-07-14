@@ -54,5 +54,4 @@ void Ball::generatePointPixmap()
     painter.setPen(Qt::NoPen);
     painter.setBrush(Qt::white);
     painter.drawEllipse(0, 0, 3, 3);
-
 }
