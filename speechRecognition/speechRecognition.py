@@ -16,11 +16,11 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
+import pyautogui
 import argparse
 import sys
 import time
 from ctypes import *
-
 import tensorflow as tf
 import pyaudio
 import wave
@@ -29,12 +29,7 @@ import audioop
 import os
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
-
-# pylint: disable=unused-import
 from tensorflow.contrib.framework.python.ops import audio_ops as contrib_audio
-
-
-# pylint: enable=unused-import
 
 
 def py_error_handler(filename, line, function, err, fmt):
@@ -95,7 +90,10 @@ def run_graph(wav_data, labels, input_layer_name, output_layer_name,
             human_string = labels[node_id]
             score = predictions[node_id]
             print('%s (score = %.5f)' % (human_string, score))
-
+            for s in ['up', 'down', 'left', 'right']:
+                if human_string == s:
+                    pyautogui.press(s)
+                    break
         return 0
 
 
@@ -132,7 +130,7 @@ def label_wav(wav, labels, graph, input_name, output_name, how_many_labels):
     prev_data2 = []
     prev_data3 = []
     prev_data4 = []
-    INTENSITY = noiseIntensityAverage * 2;
+    INTENSITY = noiseIntensityAverage * 2
     print("Ready!\n\n")
     while True:
         stream = p.open(format=FORMAT, channels=CHANNELS, rate=RATE, input=True, frames_per_buffer=CHUNK)
@@ -172,6 +170,7 @@ def label_wav(wav, labels, graph, input_name, output_name, how_many_labels):
 
 
 if __name__ == '__main__':
+    addToPath = ""
     WAVE_OUTPUT_FILENAME = "file.wav"
     lableFileName = "conv_actions_labels.txt"
     graphFileName = "conv_actions_frozen.pb"
