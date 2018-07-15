@@ -8,8 +8,7 @@ namespace Ui {
 class Menu;
 }
 
-class Menu : public QWidget
-{
+class Menu : public QWidget {
     Q_OBJECT
 
 public:
@@ -18,20 +17,13 @@ public:
 
 private slots:
     void on_startButton_clicked();
-    void on_loadButton_clicked();
-
     void on_optionsButton_clicked();
-
     void on_exitButton_clicked();
 
 private:
     Ui::Menu *ui;
-
     void loadFile(const QString &);
-    //    void setFileName(const QString &);
-
     QString m_fileName;
-
 };
 
 #endif // MENU_H

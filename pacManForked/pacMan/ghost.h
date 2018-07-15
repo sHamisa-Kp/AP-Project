@@ -4,8 +4,7 @@
 #include <QPainter>
 #include <QGraphicsItem>
 #include <QGraphicsScene>
-class Ghost:public QGraphicsItem
-{
+class Ghost:public QGraphicsItem {
 public:
     Ghost();
     QRectF boundingRect() const;
@@ -15,7 +14,6 @@ public:
     void setgosy(int);
     void setDirection(int dir);
     void setColor(QString col);
-
     void changeGeometry() { prepareGeometryChange(); }
 
     QPixmap left1,left2;

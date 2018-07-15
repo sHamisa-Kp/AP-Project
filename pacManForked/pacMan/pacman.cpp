@@ -1,18 +1,15 @@
 #include "pacman.h"
 
-Pacman::Pacman()
-{
-    animestate=0;
-    //    death=0;
-    pacx=400/2;
-    pacy=360;
-    x=10;
-    y=10;
+Pacman::Pacman() {
+    animestate = 0;
+    pacx = 200;
+    pacy = 360;
+    x = 10;
+    y = 10;
     height = 23;
     width = 23;
+    direction = 4; //default direction of pacman
 
-    // This will load pacman images
-    direction=4;
     right1.load(":/images/pacround.png");
     right2.load(":/images/pacright1.png");
     right3.load(":/images/pacright2.png");
@@ -30,90 +27,82 @@ Pacman::Pacman()
     left3.load(":/images/pacleft2.png");
 
 }
-QRectF Pacman::boundingRect() const
-{
+
+QRectF Pacman::boundingRect() const {
     return QRect(pacx-x, pacy-y, height, width);
-
-
 }
 
-void Pacman::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
-{
-    // sets the correct images to each direction.
-    switch(direction){
+/* set correct image to each direction */
+void Pacman::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) {
+    switch(direction) {
     case 1:
-        if(animestate<2){
+        if(animestate < 2) {
             painter->drawPixmap(pacx-x,pacy-y,height,width,left1);
-        }else if(animestate<4){
+        }
+        else if(animestate < 4) {
             painter->drawPixmap(pacx-x,pacy-y,height,width,left2);
-        }else if(animestate<6){
+        }
+        else if(animestate < 6) {
             painter->drawPixmap(pacx-x,pacy-y,height,width,left3);
         }
-
         break;
-    case 4:
-        if(animestate<2){
-            painter->drawPixmap(pacx-x,pacy-y,height,width,right1);
-        }else if(animestate<4){
-            painter->drawPixmap(pacx-x,pacy-y,height,width,right2);
-        }else if(animestate<6){
-            painter->drawPixmap(pacx-x,pacy-y,height,width,right3);
-        }
 
-        break;
-    case 3:
-        if(animestate<2){
-            painter->drawPixmap(pacx-x,pacy-y,height,width,down1);
-        }else if(animestate<4){
-            painter->drawPixmap(pacx-x,pacy-y,height,width,down2);
-        }
-        else if(animestate<6){
-            painter->drawPixmap(pacx-x,pacy-y,height,width,down3);
-        }
-
-
-        break;
     case 2:
-        if(animestate<2){
+        if(animestate < 2) {
             painter->drawPixmap(pacx-x,pacy-y,height,width,up1);
-        }else if(animestate<4){
+        }
+        else if(animestate < 4) {
             painter->drawPixmap(pacx-x,pacy-y,height,width,up2);
-        }else if(animestate<6){
+        }
+        else if(animestate < 6) {
             painter->drawPixmap(pacx-x,pacy-y,height,width,up3);
         }
+        break;
 
+    case 3:
+        if(animestate < 2) {
+            painter->drawPixmap(pacx-x,pacy-y,height,width,down1);
+        }
+        else if(animestate < 4) {
+            painter->drawPixmap(pacx-x,pacy-y,height,width,down2);
+        }
+        else if(animestate < 6) {
+            painter->drawPixmap(pacx-x,pacy-y,height,width,down3);
+        }
+        break;
+
+    case 4:
+        if(animestate < 2) {
+            painter->drawPixmap(pacx-x,pacy-y,height,width,right1);
+        }
+        else if(animestate < 4) {
+            painter->drawPixmap(pacx-x,pacy-y,height,width,right2);
+        }
+        else if(animestate < 6) {
+            painter->drawPixmap(pacx-x,pacy-y,height,width,right3);
+        }
         break;
     }
 }
 
+
 // a method used to animate pacman through the three images.
-void Pacman::advance()
-{
-
-    if(animestate>3 ){
-        animestate=0;
-    }else{
-        animestate++;
-    }
+void Pacman::advance() {
+    (animestate > 3) ? animestate = 0 : animestate++;
 }
-
-void Pacman::setpacx(int x)
-{
-
+void Pacman::setpacx(int x) {
     pacx=x;
 }
 
-void Pacman::setpacy(int y)
-{
+void Pacman::setpacy(int y) {
     pacy=y;
 }
 
-void Pacman::setDirection(int dir)
-{
-    direction=dir;
+void Pacman::setDirection(int dir) {
+    direction = dir;
 }
-void Pacman::setDeath(int d)
-{
+
+void Pacman::setDeath(int d) {
     death=d;
 }
 
