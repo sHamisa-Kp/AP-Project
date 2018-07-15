@@ -172,11 +172,10 @@ def label_wav(wav, labels, graph, input_name, output_name, how_many_labels):
 
 
 if __name__ == '__main__':
-    addToPath = ""
     WAVE_OUTPUT_FILENAME = "file.wav"
-    lableFileName = "conv_actions_labels.txt"
+    labelFileName = "conv_actions_labels.txt"
     graphFileName = "conv_actions_frozen.pb"
     how_many_labels = 1
 
-    label_wav(WAVE_OUTPUT_FILENAME, lableFileName, graphFileName, "wav_data:0",
+    label_wav(WAVE_OUTPUT_FILENAME, labelFileName, graphFileName, "wav_data:0",
               "labels_softmax:0", how_many_labels)
