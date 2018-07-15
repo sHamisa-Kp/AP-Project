@@ -1,0 +1,3 @@
+/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-debug/CMakeFiles/pacMan.dir

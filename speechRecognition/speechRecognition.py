@@ -41,7 +41,7 @@ FORMAT = pyaudio.paInt16
 CHANNELS = 1
 RATE = 16000
 CHUNK = 1024
-RECORD_SECONDS = 0.85
+RECORD_SECONDS = 0.5
 num_samples = 50
 
 
@@ -92,7 +92,9 @@ def run_graph(wav_data, labels, input_layer_name, output_layer_name,
             print('%s (score = %.5f)' % (human_string, score))
             for s in ['up', 'down', 'left', 'right']:
                 if human_string == s:
-                    pyautogui.press(s)
+                    for i in range(5):
+                        pyautogui.press(s)
+
                     break
         return 0
 
@@ -130,7 +132,7 @@ def label_wav(wav, labels, graph, input_name, output_name, how_many_labels):
     prev_data2 = []
     prev_data3 = []
     prev_data4 = []
-    INTENSITY = noiseIntensityAverage * 2
+    INTENSITY = noiseIntensityAverage * 2.5
     print("Ready!\n\n")
     while True:
         stream = p.open(format=FORMAT, channels=CHANNELS, rate=RATE, input=True, frames_per_buffer=CHUNK)

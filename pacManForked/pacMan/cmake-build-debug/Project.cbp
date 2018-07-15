@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Project"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pacMan">
+				<Option output="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-debug/pacMan" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 pacMan"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pacMan/fast">
+				<Option output="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-debug/pacMan" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 pacMan/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/CMakeLists.txt">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/Images.qrc">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/Resources.qrc">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/Sound/pacman_beginning.wav">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/Sound/pacman_chomp.wav">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/Sound/pacman_death.wav">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/Sound/pacman_eatghost.wav">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/Sound/pacman_extrapac.wav">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/Sound/pacman_intermission.wav">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/Sound/waka.wav">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/Sounds.qrc">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/ball.cpp">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/ball.h">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-debug/CMakeCache.txt">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-debug/Makefile">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-debug/Project.cbp">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-debug/cmake_install.cmake">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-debug/pacMan.cbp">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/ghost.cpp">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/ghost.h">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/GhostSprites.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/More_Pacman_Sprites_by_mightybearrr.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/Pac_man_sprite_sheet_by_WACKAWACKADOO.jpg">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/PacmanGameOver.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/PacmanGameScreen.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/PacmanOpenScreen.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/back_up/pacclose.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/back_up/pacopen1.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/back_up/pacopen2.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/back_up/pacopen3.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/die1.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/die2.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/die3.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/die4.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/die5.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/die6.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/die7.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/die8.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/die9.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/dot.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/ghost0.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/ghostdown1.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/ghostdown2.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/ghostdownblue1.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/ghostdownblue2.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/ghostdownorange1.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/ghostdownorange2.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/ghostdownred1.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/ghostdownred2.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/ghostleft1.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/ghostleft2.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/ghostleftblue1.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/ghostleftblue2.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/ghostleftorange1.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/ghostleftorange2.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/ghostleftred1.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/ghostleftred2.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/ghostright1.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/ghostright2.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/ghostrightblue1.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/ghostrightblue2.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/ghostrightorange1.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/ghostrightorange2.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/ghostrightred1.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/ghostrightred2.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/ghostscaredblue1.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/ghostscaredblue2.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/ghostscaredwhite1.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/ghostscaredwhite2.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/ghostup1.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/ghostup2.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/ghostupblue1.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/ghostupblue2.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/ghostuporange1.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/ghostuporange2.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/ghostupred1.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/ghostupred2.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pac_map.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pac_map3.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pac_map_old.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pacclose.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pacclosed.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pacclosel.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/paccloseu.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pacdown1.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pacdown2.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pacleft1.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pacleft2.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/paclogo.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pacmanCloseTest.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pacmanOpenTest.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pacmanOpenTest2.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pacmanOpenTest2D.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pacmanOpenTest2L.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pacmanOpenTest2U.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pacmanOpenTest3.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pacmanOpenTest3D.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pacmanOpenTest3L.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pacmanOpenTest3U.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pacmanOpenTestD.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pacmanOpenTestL.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pacmanOpenTestU.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pacman_layout.JPG">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pacopen1.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pacopen1d.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pacopen1l.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pacopen1u.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pacopen2.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pacopen2d.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pacopen2l.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pacopen2u.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pacopen3.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pacopen3d.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pacopen3l.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pacopen3u.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pacright1.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pacright2.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pacround.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pacup1.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pacup2.png">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/main.cpp">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/menu.cpp">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/menu.h">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/menu.ui">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/options.cpp">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/options.h">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/options.ui">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/pacMan.pro">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/pacMan.pro.user">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/pacman.cpp">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/pacman.h">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/pacmanboard.cpp">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/pacmanboard.h">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/pacmanwindow.cpp">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/pacmanwindow.h">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/pacmanwindow.ui">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/player.h.autosave">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/powerball.cpp">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/powerball.h">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/textdrawing.cpp">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/textdrawing.h">
+			<Option target="pacMan"/>
+		</Unit>
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
