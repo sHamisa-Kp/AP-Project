@@ -29,19 +29,6 @@ Pacman::Pacman()
     left2.load(":/images/pacleft1.png");
     left3.load(":/images/pacleft2.png");
 
-    dead1.load(":/images/die1.png");
-    dead2.load(":/images/die2.png");
-    dead3.load(":/images/die3.png");
-    dead4.load(":/images/die4.png");
-    dead5.load(":/images/die5.png");
-    dead6.load(":/images/die6.png");
-    dead7.load(":/images/die7.png");
-    dead8.load(":/images/die8.png");
-    dead8.load(":/images/die9.png");
-
-
-
-
 }
 QRectF Pacman::boundingRect() const
 {
@@ -97,27 +84,6 @@ void Pacman::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QW
 
         break;
     }
-
-    //if (death > 1){
-    //    if (death < 1){
-    //        painter->drawPixmap(pacx-x,pacy-y,height,width,dead1);}
-    //    else if(death<2){
-    //                    painter->drawPixmap(pacx-x,pacy-y,height,width,dead2);
-    //                }else if(death<3){
-    //                    painter->drawPixmap(pacx-x,pacy-y,height,width,dead3);
-    //                }else if(death<4){
-    //        painter->drawPixmap(pacx-x,pacy-y,height,width,dead4);
-    //    }else if(death<5){
-    //        painter->drawPixmap(pacx-x,pacy-y,height,width,dead5);
-    //    }else if(death<7){
-    //        painter->drawPixmap(pacx-x,pacy-y,height,width,dead6);
-    //    }else if(death<8){
-    //        painter->drawPixmap(pacx-x,pacy-y,height,width,dead7);
-    //    }else if(death<9){
-    //        painter->drawPixmap(pacx-x,pacy-y,height,width,dead8);
-    //    }else if(death<10){
-    //        painter->drawPixmap(pacx-x,pacy-y,height,width,dead9);
-    //    }}
 }
 
 // a method used to animate pacman through the three images.
@@ -129,11 +95,6 @@ void Pacman::advance()
     }else{
         animestate++;
     }
-}
-
-void Pacman::deathseq()
-{
-
 }
 
 void Pacman::setpacx(int x)
