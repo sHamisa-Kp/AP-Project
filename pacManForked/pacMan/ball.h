@@ -11,7 +11,7 @@ public:
     Ball();
     QRectF boundingRect() const;
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget);
-    void drawballs(QPainter *painter);
+//    void drawballs(QPainter *painter);
     void setpoints(QVector<QPoint> points);
     void removepoint(QPoint p);
 

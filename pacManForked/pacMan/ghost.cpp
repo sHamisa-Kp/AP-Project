@@ -38,9 +38,10 @@ void Ghost::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWi
     if(!is_Scared){
         switch(direction){
         case 1:
-            if(animestate==0){
+            if(animestate==0) {
                 painter->drawPixmap(gosx-15,gosy-15,30,30,left1);
-            }else{
+            }
+            else{
                 painter->drawPixmap(gosx-15,gosy-15,30,30,left2);
             }
             break;
@@ -96,17 +97,17 @@ void Ghost::advance()
 
 void Ghost::setgosx(int x)
 {
-    gosx=x;
+    gosx = x;
 }
 
 void Ghost::setgosy(int y)
 {
-    gosy=y;
+    gosy = y;
 }
 
 void Ghost::setDirection(int dir)
 {
-    direction=dir;
+    direction = dir;
 }
 
 void Ghost::setColor(QString col)
