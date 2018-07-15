@@ -10,9 +10,8 @@
 #include <QFileDialog>
 
 Menu::Menu(QWidget *parent) :
-    QWidget(parent),
-    ui(new Ui::Menu)
-{
+        QWidget(parent),
+        ui(new Ui::Menu) {
     ui->setupUi(this);
 
     QPalette q;
@@ -20,38 +19,31 @@ Menu::Menu(QWidget *parent) :
     this->setPalette(q);
 }
 
-Menu::~Menu()
-{
+Menu::~Menu() {
     delete ui;
 }
 
-void Menu::on_startButton_clicked()
-{
+void Menu::on_startButton_clicked() {
     Options *m = new Options;
     m->show();
     this->window()->close();
 }
 
 
-
-
-void Menu::on_loadButton_clicked()
-{
+void Menu::on_loadButton_clicked() {
 
     //w->show();
     //this->close();
 
 }
 
-void Menu::on_optionsButton_clicked()
-{
+void Menu::on_optionsButton_clicked() {
     Options *m = new Options;
     m->show();
     this->window()->close();
 }
 
-void Menu::on_exitButton_clicked()
-{
+void Menu::on_exitButton_clicked() {
     this->window()->close();
 }
 

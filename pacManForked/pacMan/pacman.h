@@ -4,29 +4,39 @@
 #include <QPainter>
 #include <QGraphicsItem>
 #include <QGraphicsScene>
-class Pacman : public QGraphicsItem
-{
+
+class Pacman : public QGraphicsItem {
 
 public:
     Pacman();
+
     QRectF boundingRect() const;
+
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget);
+
     void advance();
+
     void setpacx(int);
+
     void setpacy(int);
+
     void setDirection(int dir);
+
     void setDeath(int);
+
     bool deadBool;
+
     void changeGeometry() { prepareGeometryChange(); }
 
-    QPixmap left1,left2,left3,left4;
-    QPixmap up1,up2,up3,up4;
-    QPixmap down1,down2,down3,down4;
-    QPixmap right1,right2,right3,right4;
+    QPixmap left1, left2, left3, left4;
+    QPixmap up1, up2, up3, up4;
+    QPixmap down1, down2, down3, down4;
+    QPixmap right1, right2, right3, right4;
 
-    int pacx,pacy,x,y,height,width;
+    int pacx, pacy, x, y, height, width;
     int direction;
     int animestate;
     int death;
 };
+
 #endif // PACMAN_H

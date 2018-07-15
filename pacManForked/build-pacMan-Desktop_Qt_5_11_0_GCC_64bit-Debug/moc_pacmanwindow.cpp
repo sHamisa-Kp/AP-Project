@@ -34,13 +34,13 @@ static const qt_meta_stringdata_Pacmanwindow_t qt_meta_stringdata_Pacmanwindow =
 QT_MOC_LITERAL(0, 0, 12), // "Pacmanwindow"
 QT_MOC_LITERAL(1, 13, 7), // "updater"
 QT_MOC_LITERAL(2, 21, 0), // ""
-QT_MOC_LITERAL(3, 22, 12), // "ghostupdater"
+QT_MOC_LITERAL(3, 22, 12), // "ghostUpdater"
 QT_MOC_LITERAL(4, 35, 11), // "timeoutTime"
 QT_MOC_LITERAL(5, 47, 22), // "on_pauseButton_clicked"
 QT_MOC_LITERAL(6, 70, 25) // "on_controlsButton_clicked"
 
     },
-    "Pacmanwindow\0updater\0\0ghostupdater\0"
+    "Pacmanwindow\0updater\0\0ghostUpdater\0"
     "timeoutTime\0on_pauseButton_clicked\0"
     "on_controlsButton_clicked"
 };
@@ -83,7 +83,7 @@ void Pacmanwindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->updater(); break;
-        case 1: _t->ghostupdater(); break;
+        case 1: _t->ghostUpdater(); break;
         case 2: { int _r = _t->timeoutTime();
             if (_a[0]) *reinterpret_cast< int*>(_a[0]) = std::move(_r); }  break;
         case 3: _t->on_pauseButton_clicked(); break;

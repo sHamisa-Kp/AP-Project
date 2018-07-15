@@ -5,19 +5,23 @@
 #include "pacmanwindow.h"
 
 namespace Ui {
-class Menu;
+    class Menu;
 }
 
-class Menu : public QWidget
-{
+class Menu : public QWidget {
     Q_OBJECT
 
 public:
     explicit Menu(QWidget *parent = 0);
+
     ~Menu();
 
-private slots:
-    void on_startButton_clicked();
+private
+    slots:
+            void
+
+    on_startButton_clicked();
+
     void on_loadButton_clicked();
 
     void on_optionsButton_clicked();

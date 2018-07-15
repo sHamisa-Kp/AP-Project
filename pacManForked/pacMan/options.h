@@ -5,21 +5,25 @@
 #include <QMessageBox>
 
 namespace Ui {
-class Options;
+    class Options;
 }
 
-class Options : public QWidget
-{
+class Options : public QWidget {
     Q_OBJECT
 
 public:
     explicit Options(QWidget *parent = 0);
+
     ~Options();
+
     QString mes;
     int difficulty;
-private slots:
+private
+    slots:
 
-    void on_startButton_clicked();
+            void
+
+    on_startButton_clicked();
     //    void easy(bool);
     //    void medium(bool);
     //    void hard(bool);

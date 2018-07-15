@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.10)
 project(pacMan)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES main.cpp)
-find_package(Qt5Widgets REQUIRED)
+include_directories(.)
+
 add_executable(pacMan
         ball.cpp
         ball.h
@@ -25,6 +25,3 @@ add_executable(pacMan
         powerball.h
         textdrawing.cpp
         textdrawing.h)
-
-
-target_link_libraries(pacMan Qt5::Widgets)

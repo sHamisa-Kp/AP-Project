@@ -315,7 +315,7 @@
 		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/ghostupred2.png">
 			<Option target="pacMan"/>
 		</Unit>
-		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pac_map.png">
+		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pacmanBoard.png">
 			<Option target="pacMan"/>
 		</Unit>
 		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/images/pac_map3.png">
