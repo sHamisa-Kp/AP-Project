@@ -57,7 +57,8 @@ SOURCES       = ../pacMan/main.cpp \
 		../pacMan/pacmanboard.cpp \
 		../pacMan/pacmanwindow.cpp \
 		../pacMan/powerball.cpp \
-		../pacMan/textdrawing.cpp moc_pacmanwindow.cpp
+		../pacMan/textdrawing.cpp qrc_Images.cpp \
+		moc_pacmanwindow.cpp
 OBJECTS       = main.o \
 		ball.o \
 		ghost.o \
@@ -66,6 +67,7 @@ OBJECTS       = main.o \
 		pacmanwindow.o \
 		powerball.o \
 		textdrawing.o \
+		qrc_Images.o \
 		moc_pacmanwindow.o
 DIST          = ../../../../Qt5.11.0/5.11.0/gcc_64/mkspecs/features/spec_pre.prf \
 		../../../../Qt5.11.0/5.11.0/gcc_64/mkspecs/common/unix.conf \
@@ -673,7 +675,7 @@ check: first
 
 benchmark: first
 
-compiler_rcc_make_all:
+compiler_rcc_make_all: qrc_Images.cpp
 compiler_rcc_clean:
 <<<<<<< HEAD
 	-$(DEL_FILE) qrc_Resources.cpp qrc_Images.cpp qrc_Sounds.cpp
@@ -5075,6 +5077,9 @@ textdrawing.o: ../pacMan/textdrawing.cpp ../pacMan/textdrawing.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/QGraphicsScene \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qgraphicsscene.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o textdrawing.o ../pacMan/textdrawing.cpp
+
+qrc_Images.o: qrc_Images.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qrc_Images.o qrc_Images.cpp
 
 moc_pacmanwindow.o: moc_pacmanwindow.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_pacmanwindow.o moc_pacmanwindow.cpp
