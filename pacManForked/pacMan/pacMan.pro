@@ -45,4 +45,5 @@ HEADERS += \
 FORMS += \
     pacmanwindow.ui
 
-RESOURCES +=
+RESOURCES += \
+    Images.qrc

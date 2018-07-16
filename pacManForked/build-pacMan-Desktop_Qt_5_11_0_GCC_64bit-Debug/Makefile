@@ -57,7 +57,8 @@ SOURCES       = ../pacMan/main.cpp \
 		../pacMan/pacmanboard.cpp \
 		../pacMan/pacmanwindow.cpp \
 		../pacMan/powerball.cpp \
-		../pacMan/textdrawing.cpp moc_pacmanwindow.cpp
+		../pacMan/textdrawing.cpp qrc_Images.cpp \
+		moc_pacmanwindow.cpp
 OBJECTS       = main.o \
 		ball.o \
 		ghost.o \
@@ -66,6 +67,7 @@ OBJECTS       = main.o \
 		pacmanwindow.o \
 		powerball.o \
 		textdrawing.o \
+		qrc_Images.o \
 		moc_pacmanwindow.o
 DIST          = /media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/mkspecs/features/spec_pre.prf \
 		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/mkspecs/common/unix.conf \
@@ -425,6 +427,7 @@ Makefile: ../pacMan/pacMan.pro /media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Q
 		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/mkspecs/features/yacc.prf \
 		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/mkspecs/features/lex.prf \
 		../pacMan/pacMan.pro \
+		../pacMan/Images.qrc \
 		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/lib/libQt5Widgets.prl \
 		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/lib/libQt5Multimedia.prl \
 		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/lib/libQt5Gui.prl \
@@ -598,6 +601,7 @@ Makefile: ../pacMan/pacMan.pro /media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Q
 /media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/mkspecs/features/yacc.prf:
 /media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/mkspecs/features/lex.prf:
 ../pacMan/pacMan.pro:
+../pacMan/Images.qrc:
 /media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/lib/libQt5Widgets.prl:
 /media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/lib/libQt5Multimedia.prl:
 /media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/lib/libQt5Gui.prl:
@@ -617,6 +621,7 @@ dist: distdir FORCE
 distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
+	$(COPY_FILE) --parents ../pacMan/Images.qrc $(DISTDIR)/
 	$(COPY_FILE) --parents /media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/mkspecs/features/data/dummy.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ../pacMan/ball.h ../pacMan/ghost.h ../pacMan/pacman.h ../pacMan/pacmanboard.h ../pacMan/pacmanwindow.h ../pacMan/powerball.h ../pacMan/textdrawing.h $(DISTDIR)/
 	$(COPY_FILE) --parents ../pacMan/main.cpp ../pacMan/ball.cpp ../pacMan/ghost.cpp ../pacMan/pacman.cpp ../pacMan/pacmanboard.cpp ../pacMan/pacmanwindow.cpp ../pacMan/powerball.cpp ../pacMan/textdrawing.cpp $(DISTDIR)/
@@ -644,8 +649,68 @@ check: first
 
 benchmark: first
 
-compiler_rcc_make_all:
+compiler_rcc_make_all: qrc_Images.cpp
 compiler_rcc_clean:
+	-$(DEL_FILE) qrc_Images.cpp
+qrc_Images.cpp: ../pacMan/Images.qrc \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/bin/rcc \
+		../pacMan/images/ghostrightred1.png \
+		../pacMan/images/die6.png \
+		../pacMan/images/ghostrightorange2.png \
+		../pacMan/images/ghostdown2.png \
+		../pacMan/images/ghostdownblue2.png \
+		../pacMan/images/ghostrightblue2.png \
+		../pacMan/images/ghostupblue2.png \
+		../pacMan/images/die5.png \
+		../pacMan/images/dot.png \
+		../pacMan/images/ghostrightorange1.png \
+		../pacMan/images/ghostdown1.png \
+		../pacMan/images/ghostdownblue1.png \
+		../pacMan/images/ghostrightblue1.png \
+		../pacMan/images/ghostupblue1.png \
+		../pacMan/images/die4.png \
+		../pacMan/images/ghostupred2.png \
+		../pacMan/images/ghostscaredblue2.png \
+		../pacMan/images/ghostscaredwhite2.png \
+		../pacMan/images/pacright2.png \
+		../pacMan/images/pac_map_old.png \
+		../pacMan/images/ghostupred1.png \
+		../pacMan/images/ghostscaredblue1.png \
+		../pacMan/images/ghostscaredwhite1.png \
+		../pacMan/images/pacright1.png \
+		../pacMan/images/pacround.png \
+		../pacMan/images/die2.png \
+		../pacMan/images/ghostdownred2.png \
+		../pacMan/images/ghostup2.png \
+		../pacMan/images/ghostleftorange2.png \
+		../pacMan/images/ghostuporange2.png \
+		../pacMan/images/die1.png \
+		../pacMan/images/ghostdownred1.png \
+		../pacMan/images/ghostdownorange2.png \
+		../pacMan/images/ghostup1.png \
+		../pacMan/images/ghostleft2.png \
+		../pacMan/images/ghostleftorange1.png \
+		../pacMan/images/ghostleftblue2.png \
+		../pacMan/images/ghostuporange1.png \
+		../pacMan/images/ghostdownorange1.png \
+		../pacMan/images/ghostleftred2.png \
+		../pacMan/images/die9.png \
+		../pacMan/images/ghostleft1.png \
+		../pacMan/images/ghostleftblue1.png \
+		../pacMan/images/pacup1.png \
+		../pacMan/images/ghostleftred1.png \
+		../pacMan/images/ghostright2.png \
+		../pacMan/images/die8.png \
+		../pacMan/images/pacdown2.png \
+		../pacMan/images/ghost0.png \
+		../pacMan/images/pacleft2.png \
+		../pacMan/images/ghostrightred2.png \
+		../pacMan/images/ghostright1.png \
+		../pacMan/images/die7.png \
+		../pacMan/images/pacdown1.png \
+		../pacMan/images/pacleft1.png
+	/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/bin/rcc -name Images ../pacMan/Images.qrc -o qrc_Images.cpp
+
 compiler_moc_predefs_make_all: moc_predefs.h
 compiler_moc_predefs_clean:
 	-$(DEL_FILE) moc_predefs.h
@@ -1009,7 +1074,7 @@ compiler_yacc_impl_make_all:
 compiler_yacc_impl_clean:
 compiler_lex_make_all:
 compiler_lex_clean:
-compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean compiler_uic_clean 
+compiler_clean: compiler_rcc_clean compiler_moc_predefs_clean compiler_moc_header_clean compiler_uic_clean 
 
 ####### Compile
 
@@ -2427,6 +2492,9 @@ textdrawing.o: ../pacMan/textdrawing.cpp ../pacMan/textdrawing.h \
 		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/QGraphicsScene \
 		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qgraphicsscene.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o textdrawing.o ../pacMan/textdrawing.cpp
+
+qrc_Images.o: qrc_Images.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qrc_Images.o qrc_Images.cpp
 
 moc_pacmanwindow.o: moc_pacmanwindow.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_pacmanwindow.o moc_pacmanwindow.cpp
