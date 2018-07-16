@@ -47,8 +47,6 @@ HEADERS += \
     textdrawing.h
 
 FORMS += \
-    menu.ui \
-    options.ui \
     pacmanwindow.ui
 
 RESOURCES += \

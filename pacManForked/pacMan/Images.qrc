@@ -2,8 +2,6 @@
     <qresource prefix="/">
         <file>images/ghostdown1.png</file>
         <file>images/ghostdown2.png</file>
-        <file>images/ghostdownblue1.png</file>
-        <file>images/ghostdownblue2.png</file>
         <file>images/ghostdownorange1.png</file>
         <file>images/ghostdownorange2.png</file>
         <file>images/ghostdownred1.png</file>
@@ -24,10 +22,6 @@
         <file>images/ghostrightorange2.png</file>
         <file>images/ghostrightred1.png</file>
         <file>images/ghostrightred2.png</file>
-        <file>images/ghostscaredblue1.png</file>
-        <file>images/ghostscaredblue2.png</file>
-        <file>images/ghostscaredwhite1.png</file>
-        <file>images/ghostscaredwhite2.png</file>
         <file>images/GhostSprites.png</file>
         <file>images/ghostup1.png</file>
         <file>images/ghostup2.png</file>
@@ -61,5 +55,9 @@
         <file>images/pacroundright.png</file>
         <file>images/pacrounddown.png</file>
         <file>images/pacroundup.png</file>
+        <file>images/ghostscaredblue1.svg</file>
+        <file>images/ghostscaredblue2.svg</file>
+        <file>images/ghostscaredwhite1.svg</file>
+        <file>images/ghostscaredwhite2.svg</file>
     </qresource>
 </RCC>

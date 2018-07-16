@@ -19,10 +19,10 @@ Ghost::Ghost() {
     down2.load(":/images/ghostdown2.png");
     left1.load(":/images/ghostleft1.png");
     left2.load(":/images/ghostleft2.png");
-    scareb.load(":/images/ghostscaredblue1.png");
-    scareb1.load(":/images/ghostscaredblue2.png");
-    scarew.load(":/images/ghostscaredwhite1.png");
-    scarew1.load(":/images/ghostscaredwhite2.png");
+    scareb.load(":/images/ghostscaredblue1.svg");
+    scareb1.load(":/images/ghostscaredblue2.svg");
+    scarew.load(":/images/ghostscaredwhite1.svg");
+    scarew1.load(":/images/ghostscaredwhite2.svg");
 
 }
 

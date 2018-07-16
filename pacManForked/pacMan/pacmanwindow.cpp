@@ -48,8 +48,8 @@ Pacmanwindow::Pacmanwindow(QWidget *parent) :
     scene->setSceneRect(0, 0, 640, 480);
     ui->graphicsView->setSceneRect(scene->sceneRect());
     //Used to exit the application
-    connect(ui->exitButton, SIGNAL(clicked()), qApp, SLOT(closeAllWindows()));
-    ui->exitButton->setShortcut(QKeySequence("Escape"));
+//    connect(ui->exitButton, SIGNAL(clicked()), qApp, SLOT(closeAllWindows()));
+//    ui->exitButton->setShortcut(QKeySequence("Escape"));
 
 
     text = new TextDrawing;
@@ -62,7 +62,7 @@ Pacmanwindow::Pacmanwindow(QWidget *parent) :
 // A Method used to store the name and difficulty parsed from options
 void Pacmanwindow::parseMessage(QString name, int temp) {
     this->name = name;
-    ui->scoreLabel->setText(name + "'s Score");
+    ui->scoreLabel->setText("Score");
     difficulty = temp;
 }
 
@@ -677,7 +677,6 @@ void Pacmanwindow::updater() {
     static int timeGame;
     // This will display the lives and level
     ui->livesLcdNumber_2->display(lives);
-    ui->levelLcdNumber_2->display(level);
     checkLost();
     pacmanMove();
 

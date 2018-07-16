@@ -43,7 +43,7 @@ void TextDrawing::paint(QPainter *painter, const QStyleOptionGraphicsItem *optio
             font.setPointSize(18);
             QPen highPen(Qt::yellow);
             painter->setPen(highPen);
-            painter->setFont(font);
+            painter->setFont(QFont("Arial", 15));
             painter->drawText(x + 120, y - 110, "HIGHSCORE");
             painter->drawText(x + 0, y - 70, "Tom");
             painter->drawText(x + 80, y - 70, QString::number(score + 1000));

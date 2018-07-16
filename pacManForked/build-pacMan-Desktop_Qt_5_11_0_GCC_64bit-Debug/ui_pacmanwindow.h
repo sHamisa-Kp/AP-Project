@@ -15,7 +15,6 @@
 #include <QtWidgets/QGraphicsView>
 #include <QtWidgets/QLCDNumber>
 #include <QtWidgets/QLabel>
-#include <QtWidgets/QPushButton>
 
 QT_BEGIN_NAMESPACE
 
@@ -30,9 +29,6 @@ public:
     QLabel *scoreLabel;
     QLCDNumber *highScroreLcdNumber_2;
     QLabel *label_6;
-    QPushButton *pauseButton;
-    QPushButton *controlsButton;
-    QPushButton *exitButton;
     QLCDNumber *timeLcdNumber_2;
 
     void setupUi(QDialog *Pacmanwindow)
@@ -141,35 +137,6 @@ public:
         label_6->setFont(font1);
         label_6->setTextFormat(Qt::AutoText);
         label_6->setAlignment(Qt::AlignCenter);
-        pauseButton = new QPushButton(Pacmanwindow);
-        pauseButton->setObjectName(QStringLiteral("pauseButton"));
-        pauseButton->setGeometry(QRect(30, 70, 119, 25));
-        QPalette palette5;
-        QBrush brush3(QColor(213, 213, 213, 255));
-        brush3.setStyle(Qt::SolidPattern);
-        palette5.setBrush(QPalette::Active, QPalette::Button, brush3);
-        palette5.setBrush(QPalette::Inactive, QPalette::Button, brush3);
-        palette5.setBrush(QPalette::Disabled, QPalette::Button, brush3);
-        pauseButton->setPalette(palette5);
-        QFont font2;
-        font2.setBold(true);
-        font2.setWeight(75);
-        pauseButton->setFont(font2);
-        pauseButton->setAutoDefault(false);
-        pauseButton->setFlat(false);
-        controlsButton = new QPushButton(Pacmanwindow);
-        controlsButton->setObjectName(QStringLiteral("controlsButton"));
-        controlsButton->setEnabled(true);
-        controlsButton->setGeometry(QRect(30, 40, 119, 25));
-        controlsButton->setFont(font2);
-        controlsButton->setAutoDefault(false);
-        exitButton = new QPushButton(Pacmanwindow);
-        exitButton->setObjectName(QStringLiteral("exitButton"));
-        exitButton->setGeometry(QRect(30, 10, 119, 25));
-        exitButton->setSizeIncrement(QSize(100, 0));
-        exitButton->setFont(font2);
-        exitButton->setAutoDefault(false);
-        exitButton->setFlat(false);
         timeLcdNumber_2 = new QLCDNumber(Pacmanwindow);
         timeLcdNumber_2->setObjectName(QStringLiteral("timeLcdNumber_2"));
         timeLcdNumber_2->setGeometry(QRect(10, 450, 139, 36));
@@ -179,11 +146,6 @@ public:
         timeLcdNumber_2->setSegmentStyle(QLCDNumber::Outline);
 
         retranslateUi(Pacmanwindow);
-
-        pauseButton->setDefault(false);
-        controlsButton->setDefault(false);
-        exitButton->setDefault(false);
-
 
         QMetaObject::connectSlotsByName(Pacmanwindow);
     } // setupUi
@@ -198,18 +160,12 @@ public:
 "</style></head><body style=\" font-family:'Ubuntu'; font-size:14pt; font-weight:600; font-style:normal;\">\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>", nullptr));
 #endif // QT_NO_TOOLTIP
-        label_7->setText(QApplication::translate("Pacmanwindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; font-weight:400;\">Lives</span></p></body></html>", nullptr));
+        label_7->setText(QApplication::translate("Pacmanwindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; color:#2e3436;\">Lives</span></p></body></html>", nullptr));
 #ifndef QT_NO_TOOLTIP
         scoreLabel->setToolTip(QApplication::translate("Pacmanwindow", "<html><head/><body><p>shamisa</p></body></html>", nullptr));
 #endif // QT_NO_TOOLTIP
-        scoreLabel->setText(QApplication::translate("Pacmanwindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; font-weight:400;\">Score</span></p></body></html>", nullptr));
+        scoreLabel->setText(QApplication::translate("Pacmanwindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; color:#2e3436;\">Score</span></p></body></html>", nullptr));
         label_6->setText(QApplication::translate("Pacmanwindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; font-weight:400;\">HighScore</span></p></body></html>", nullptr));
-        pauseButton->setText(QApplication::translate("Pacmanwindow", "Pause (P)", nullptr));
-        controlsButton->setText(QApplication::translate("Pacmanwindow", "Controls (C)", nullptr));
-        exitButton->setText(QApplication::translate("Pacmanwindow", "Exit (ESC)", nullptr));
-#ifndef QT_NO_SHORTCUT
-        exitButton->setShortcut(QString());
-#endif // QT_NO_SHORTCUT
         Q_UNUSED(Pacmanwindow);
     } // retranslateUi
 

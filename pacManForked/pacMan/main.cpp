@@ -5,7 +5,7 @@
 int main(int argc, char *argv[]) {
     QApplication a(argc, argv);
 
-    QString nametemp = "MeHdi";
+    QString nametemp = "pacMan";
     int difficulty{1};
 
 
