@@ -5,7 +5,7 @@
 #include "pacmanwindow.h"
 
 namespace Ui {
-class Menu;
+    class Menu;
 }
 
 class Menu : public QWidget {
@@ -13,6 +13,7 @@ class Menu : public QWidget {
 
 public:
     explicit Menu(QWidget *parent = 0);
+
     ~Menu();
 
 private slots:

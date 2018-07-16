@@ -324,9 +324,6 @@ pacMan: CMakeFiles/pacMan.dir/pacmanwindow.cpp.o
 pacMan: CMakeFiles/pacMan.dir/powerball.cpp.o
 pacMan: CMakeFiles/pacMan.dir/textdrawing.cpp.o
 pacMan: CMakeFiles/pacMan.dir/build.make
-pacMan: /media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/lib/libQt5Widgets.so.5.11.0
-pacMan: /media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/lib/libQt5Gui.so.5.11.0
-pacMan: /media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/lib/libQt5Core.so.5.11.0
 pacMan: CMakeFiles/pacMan.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable pacMan"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pacMan.dir/link.txt --verbose=$(VERBOSE)

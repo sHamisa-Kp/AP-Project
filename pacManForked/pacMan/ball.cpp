@@ -4,13 +4,12 @@ Ball::Ball() {
     generatePointPixmap();
 }
 
-QRectF Ball::boundingRect() const
-{
+QRectF Ball::boundingRect() const {
     return QRect(0, 0, 450, 550);
 }
 
 void Ball::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) {
-    for(int i{0}; i < points.size(); i++)
+    for (int i{0}; i < points.size(); i++)
         painter->drawPixmap(points[i].x(), points[i].y(), ballpix);
 }
 
@@ -20,14 +19,12 @@ void Ball::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWid
 //        painter->drawPixmap( points[i].x(), points[i].y(), ballpix );
 //}
 
-void Ball::setpoints(QVector<QPoint> points)
-{
+void Ball::setpoints(QVector <QPoint> points) {
     this->points.clear();
-    this->points=points;
+    this->points = points;
 }
 
-void Ball::generatePointPixmap()
-{
+void Ball::generatePointPixmap() {
     QRect bounds{QRect(0, 0, 3, 3)};
 
     QPainter painter;

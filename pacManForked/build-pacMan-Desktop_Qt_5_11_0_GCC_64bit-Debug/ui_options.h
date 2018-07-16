@@ -179,8 +179,8 @@ public:
     void retranslateUi(QWidget *Options)
     {
         Options->setWindowTitle(QApplication::translate("Options", "Pacman", nullptr));
-        easyButton->setText(QApplication::translate("Options", "Easy ", nullptr));
-        mediumButton->setText(QApplication::translate("Options", "Medium ", nullptr));
+        easyButton->setText(QApplication::translate("Options", "Easy", nullptr));
+        mediumButton->setText(QApplication::translate("Options", "Medium", nullptr));
         hardButton->setText(QApplication::translate("Options", "Hard", nullptr));
         startButton->setText(QApplication::translate("Options", "PLAY GAME", nullptr));
         label->setText(QApplication::translate("Options", "Name", nullptr));

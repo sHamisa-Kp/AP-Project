@@ -5,11 +5,12 @@
 #include <QGraphicsItem>
 #include <QGraphicsScene>
 
-class Ball : public QGraphicsItem
-{
+class Ball : public QGraphicsItem {
 public:
     Ball();
+
     QRectF boundingRect() const;
+
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget);
     void setpoints(QVector<QPoint> points);
     void removepoint(QPoint p);
@@ -17,11 +18,12 @@ public:
 
     void generatePointPixmap();
 
-    int ballx,bally;
-    int ballw,ballh;
+    int ballx, bally;
+    int ballw, ballh;
     QPixmap ballpix;
     QRectF rec;
-    QVector<QPoint> points;
+    QVector <QPoint> points;
 
 };
+
 #endif // BALL_H
