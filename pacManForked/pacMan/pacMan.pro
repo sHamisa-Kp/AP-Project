@@ -27,8 +27,6 @@ SOURCES += \
     main.cpp \
     ball.cpp \
     ghost.cpp \
-    menu.cpp \
-    options.cpp \
     pacman.cpp \
     pacmanboard.cpp \
     pacmanwindow.cpp \
@@ -38,8 +36,6 @@ SOURCES += \
 HEADERS += \
     ball.h \
     ghost.h \
-    menu.h \
-    options.h \
     pacman.h \
     pacmanboard.h \
     pacmanwindow.h \
@@ -47,11 +43,6 @@ HEADERS += \
     textdrawing.h
 
 FORMS += \
-    menu.ui \
-    options.ui \
     pacmanwindow.ui
 
-RESOURCES += \
-    Resources.qrc \
-    Images.qrc \
-    Sounds.qrc
+RESOURCES +=

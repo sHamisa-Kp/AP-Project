@@ -21,8 +21,6 @@ public:
 
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget);
 
-    void advance();
-
     void generateBalls();
 
     void AddPathPoints(int, int, int, int);
@@ -35,8 +33,6 @@ public:
 
     void setpowerballpoints(QVector <QPoint> points);
 
-    void changeGeometry() { prepareGeometryChange(); }
-
     QVector <QPoint> getballpoints();
 
     QVector <QPoint> getpowerballpoints();
@@ -44,7 +40,6 @@ public:
     QPixmap mappic;
     QVector <QPoint> pacpoints, ballpoints;
     QVector <QPoint> powerballpoints;
-    //QPoint peos[];
 };
 
 #endif // PACMANBOARD_H

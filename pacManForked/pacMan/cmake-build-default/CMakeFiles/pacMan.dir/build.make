@@ -129,33 +129,9 @@ CMakeFiles/pacMan.dir/main.cpp.o.provides: CMakeFiles/pacMan.dir/main.cpp.o.requ
 CMakeFiles/pacMan.dir/main.cpp.o.provides.build: CMakeFiles/pacMan.dir/main.cpp.o
 
 
-CMakeFiles/pacMan.dir/menu.cpp.o: CMakeFiles/pacMan.dir/flags.make
-CMakeFiles/pacMan.dir/menu.cpp.o: ../menu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/pacMan.dir/menu.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pacMan.dir/menu.cpp.o -c /home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/menu.cpp
-
-CMakeFiles/pacMan.dir/menu.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pacMan.dir/menu.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/menu.cpp > CMakeFiles/pacMan.dir/menu.cpp.i
-
-CMakeFiles/pacMan.dir/menu.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pacMan.dir/menu.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/menu.cpp -o CMakeFiles/pacMan.dir/menu.cpp.s
-
-CMakeFiles/pacMan.dir/menu.cpp.o.requires:
-
-.PHONY : CMakeFiles/pacMan.dir/menu.cpp.o.requires
-
-CMakeFiles/pacMan.dir/menu.cpp.o.provides: CMakeFiles/pacMan.dir/menu.cpp.o.requires
-	$(MAKE) -f CMakeFiles/pacMan.dir/build.make CMakeFiles/pacMan.dir/menu.cpp.o.provides.build
-.PHONY : CMakeFiles/pacMan.dir/menu.cpp.o.provides
-
-CMakeFiles/pacMan.dir/menu.cpp.o.provides.build: CMakeFiles/pacMan.dir/menu.cpp.o
-
-
 CMakeFiles/pacMan.dir/options.cpp.o: CMakeFiles/pacMan.dir/flags.make
 CMakeFiles/pacMan.dir/options.cpp.o: ../options.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/pacMan.dir/options.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/pacMan.dir/options.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pacMan.dir/options.cpp.o -c /home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/options.cpp
 
 CMakeFiles/pacMan.dir/options.cpp.i: cmake_force
@@ -179,7 +155,7 @@ CMakeFiles/pacMan.dir/options.cpp.o.provides.build: CMakeFiles/pacMan.dir/option
 
 CMakeFiles/pacMan.dir/pacman.cpp.o: CMakeFiles/pacMan.dir/flags.make
 CMakeFiles/pacMan.dir/pacman.cpp.o: ../pacman.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/pacMan.dir/pacman.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/pacMan.dir/pacman.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pacMan.dir/pacman.cpp.o -c /home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/pacman.cpp
 
 CMakeFiles/pacMan.dir/pacman.cpp.i: cmake_force
@@ -203,7 +179,7 @@ CMakeFiles/pacMan.dir/pacman.cpp.o.provides.build: CMakeFiles/pacMan.dir/pacman.
 
 CMakeFiles/pacMan.dir/pacmanboard.cpp.o: CMakeFiles/pacMan.dir/flags.make
 CMakeFiles/pacMan.dir/pacmanboard.cpp.o: ../pacmanboard.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/pacMan.dir/pacmanboard.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/pacMan.dir/pacmanboard.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pacMan.dir/pacmanboard.cpp.o -c /home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/pacmanboard.cpp
 
 CMakeFiles/pacMan.dir/pacmanboard.cpp.i: cmake_force
@@ -227,7 +203,7 @@ CMakeFiles/pacMan.dir/pacmanboard.cpp.o.provides.build: CMakeFiles/pacMan.dir/pa
 
 CMakeFiles/pacMan.dir/pacmanwindow.cpp.o: CMakeFiles/pacMan.dir/flags.make
 CMakeFiles/pacMan.dir/pacmanwindow.cpp.o: ../pacmanwindow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/pacMan.dir/pacmanwindow.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/pacMan.dir/pacmanwindow.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pacMan.dir/pacmanwindow.cpp.o -c /home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/pacmanwindow.cpp
 
 CMakeFiles/pacMan.dir/pacmanwindow.cpp.i: cmake_force
@@ -251,7 +227,7 @@ CMakeFiles/pacMan.dir/pacmanwindow.cpp.o.provides.build: CMakeFiles/pacMan.dir/p
 
 CMakeFiles/pacMan.dir/powerball.cpp.o: CMakeFiles/pacMan.dir/flags.make
 CMakeFiles/pacMan.dir/powerball.cpp.o: ../powerball.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/pacMan.dir/powerball.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/pacMan.dir/powerball.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pacMan.dir/powerball.cpp.o -c /home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/powerball.cpp
 
 CMakeFiles/pacMan.dir/powerball.cpp.i: cmake_force
@@ -275,7 +251,7 @@ CMakeFiles/pacMan.dir/powerball.cpp.o.provides.build: CMakeFiles/pacMan.dir/powe
 
 CMakeFiles/pacMan.dir/textdrawing.cpp.o: CMakeFiles/pacMan.dir/flags.make
 CMakeFiles/pacMan.dir/textdrawing.cpp.o: ../textdrawing.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/pacMan.dir/textdrawing.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/pacMan.dir/textdrawing.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pacMan.dir/textdrawing.cpp.o -c /home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/textdrawing.cpp
 
 CMakeFiles/pacMan.dir/textdrawing.cpp.i: cmake_force
@@ -302,7 +278,6 @@ pacMan_OBJECTS = \
 "CMakeFiles/pacMan.dir/ball.cpp.o" \
 "CMakeFiles/pacMan.dir/ghost.cpp.o" \
 "CMakeFiles/pacMan.dir/main.cpp.o" \
-"CMakeFiles/pacMan.dir/menu.cpp.o" \
 "CMakeFiles/pacMan.dir/options.cpp.o" \
 "CMakeFiles/pacMan.dir/pacman.cpp.o" \
 "CMakeFiles/pacMan.dir/pacmanboard.cpp.o" \
@@ -316,7 +291,6 @@ pacMan_EXTERNAL_OBJECTS =
 pacMan: CMakeFiles/pacMan.dir/ball.cpp.o
 pacMan: CMakeFiles/pacMan.dir/ghost.cpp.o
 pacMan: CMakeFiles/pacMan.dir/main.cpp.o
-pacMan: CMakeFiles/pacMan.dir/menu.cpp.o
 pacMan: CMakeFiles/pacMan.dir/options.cpp.o
 pacMan: CMakeFiles/pacMan.dir/pacman.cpp.o
 pacMan: CMakeFiles/pacMan.dir/pacmanboard.cpp.o
@@ -325,7 +299,7 @@ pacMan: CMakeFiles/pacMan.dir/powerball.cpp.o
 pacMan: CMakeFiles/pacMan.dir/textdrawing.cpp.o
 pacMan: CMakeFiles/pacMan.dir/build.make
 pacMan: CMakeFiles/pacMan.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable pacMan"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable pacMan"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pacMan.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -336,7 +310,6 @@ CMakeFiles/pacMan.dir/build: pacMan
 CMakeFiles/pacMan.dir/requires: CMakeFiles/pacMan.dir/ball.cpp.o.requires
 CMakeFiles/pacMan.dir/requires: CMakeFiles/pacMan.dir/ghost.cpp.o.requires
 CMakeFiles/pacMan.dir/requires: CMakeFiles/pacMan.dir/main.cpp.o.requires
-CMakeFiles/pacMan.dir/requires: CMakeFiles/pacMan.dir/menu.cpp.o.requires
 CMakeFiles/pacMan.dir/requires: CMakeFiles/pacMan.dir/options.cpp.o.requires
 CMakeFiles/pacMan.dir/requires: CMakeFiles/pacMan.dir/pacman.cpp.o.requires
 CMakeFiles/pacMan.dir/requires: CMakeFiles/pacMan.dir/pacmanboard.cpp.o.requires

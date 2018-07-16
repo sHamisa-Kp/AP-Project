@@ -53,7 +53,7 @@ PacmanBoard::PacmanBoard() {
     AddPathPoints(420, 30, 420, 130);
     AddPathPoints(420, 320, 420, 360);
     AddPathPoints(420, 410, 420, 450);
-    QPoint p;
+
     QPoint p1, p2, p3, p4;
     p1.setX(30);
     p1.setY(450);
@@ -68,7 +68,7 @@ PacmanBoard::PacmanBoard() {
     powerballpoints.push_front(p3);
     powerballpoints.push_front(p4);
 
-
+    QPoint p;
     // This is an algorithm found on pacman tutorials to set the balls corresponding a pacman map
     for (int i = 0; i < 450 - 1; i++) {
         for (int j = 0; j < 480 - 1; j++) {
@@ -105,7 +105,6 @@ void PacmanBoard::paint(QPainter *painter, const QStyleOptionGraphicsItem *optio
 
 
 void PacmanBoard::generateBalls() {
-
 
     //// Painter used to create points on the map
     QPainter painter;

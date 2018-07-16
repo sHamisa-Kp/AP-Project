@@ -7,7 +7,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/ball.cpp" "/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-default/CMakeFiles/pacMan.dir/ball.cpp.o"
   "/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/ghost.cpp" "/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-default/CMakeFiles/pacMan.dir/ghost.cpp.o"
   "/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/main.cpp" "/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-default/CMakeFiles/pacMan.dir/main.cpp.o"
-  "/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/menu.cpp" "/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-default/CMakeFiles/pacMan.dir/menu.cpp.o"
   "/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/options.cpp" "/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-default/CMakeFiles/pacMan.dir/options.cpp.o"
   "/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/pacman.cpp" "/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-default/CMakeFiles/pacMan.dir/pacman.cpp.o"
   "/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/pacmanboard.cpp" "/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-default/CMakeFiles/pacMan.dir/pacmanboard.cpp.o"

@@ -15,16 +15,8 @@ public:
 
     void setpoints(QVector <QPoint> points);
 
-    void drawballs(QPainter *painter);
-
-    void removepoint(QPoint p);
-
     void generatePointPixmap();
 
-    void changeGeometry() { prepareGeometryChange(); }
-
-    int ballx, bally;
-    int ballw, ballh;
     QVector <QPoint> points;
     QPixmap pBallPix;
 };
