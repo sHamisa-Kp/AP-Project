@@ -13,11 +13,6 @@ void Ball::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWid
         painter->drawPixmap(points[i].x(), points[i].y(), ballpix);
 }
 
-//void Ball::drawballs(QPainter *painter)
-//{
-//    for(int i=0;i<points.size();i++)
-//        painter->drawPixmap( points[i].x(), points[i].y(), ballpix );
-//}
 
 void Ball::setpoints(QVector <QPoint> points) {
     this->points.clear();

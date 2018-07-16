@@ -1,11 +1,6 @@
 #include "powerball.h"
 
 PowerBall::PowerBall() {
-    ballx = 0;
-    bally = 0;
-    ballw = 5;
-    ballh = 5;
-
     generatePointPixmap();
 }
 
@@ -27,12 +22,6 @@ void PowerBall::setpoints(QVector <QPoint> points) {
     this->points = points;
 }
 
-void PowerBall::drawballs(QPainter *painter) {
-    //Draws the Powerballs onto the screen
-    for (int i = 0; i < points.size(); i++) {
-        painter->drawPixmap(points[i].x() - 5, points[i].y() - 5, pBallPix);
-    }
-}
 
 void PowerBall::generatePointPixmap() {
     QRect bounds = QRect(0, 0, 10, 10);

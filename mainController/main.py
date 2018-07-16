@@ -2,7 +2,8 @@ import subprocess
 import threading
 import time
 
-condaPath = "/home/shamisa/anaconda3/bin/python3.6"
+#condaPath = "/home/shamisa/anaconda3/bin/python3.6"
+condaPath = "/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/Anaconda/bin/python3.6"
 
 
 class PacManGame(threading.Thread):
@@ -25,7 +26,7 @@ class SpeechRecognition(threading.Thread):
 
 speechRecognition = SpeechRecognition()
 speechRecognition.start()
-time.sleep(2)
+time.sleep(8)
 pacManGame = PacManGame()
 pacManGame.start()
 

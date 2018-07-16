@@ -11,7 +11,6 @@ add_executable(pacMan
         ghost.cpp
         ghost.h
         main.cpp
-        menu.cpp
         menu.h
         options.cpp
         options.h

@@ -101,9 +101,6 @@
 		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/main.cpp">
 			<Option target="pacMan"/>
 		</Unit>
-		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/menu.cpp">
-			<Option target="pacMan"/>
-		</Unit>
 		<Unit filename="/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/menu.h">
 			<Option target="pacMan"/>
 		</Unit>

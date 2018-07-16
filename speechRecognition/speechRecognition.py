@@ -17,9 +17,8 @@ from __future__ import division
 from __future__ import print_function
 
 import pyautogui
-import argparse
-import sys
 import time
+import subprocess
 from ctypes import *
 import tensorflow as tf
 import pyaudio
@@ -27,36 +26,40 @@ import wave
 import math
 import audioop
 import os
-
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
-from tensorflow.contrib.framework.python.ops import audio_ops as contrib_audio
-
-
-def py_error_handler(filename, line, function, err, fmt):
-    pass
-
+from numba import jit
 
 """ Recording Specs """
 FORMAT = pyaudio.paInt16
 CHANNELS = 1
 RATE = 16000
 CHUNK = 1024
-RECORD_SECONDS = 0.5
+RECORD_SECONDS = 0.85
 num_samples = 50
 
+"""Error Handling"""
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
-def meausureAudioIntensity(num_samples=50):
+
+# from tensorflow.contrib.framework.python.ops import audio_ops as contrib_audio
+def py_error_handler(filename, line, function, err, fmt):
+    pass
+
+
+def measureAudioIntensity(num_samples=50):
     p = pyaudio.PyAudio()
 
     stream = p.open(format=FORMAT, channels=CHANNELS, rate=RATE, input=True, frames_per_buffer=CHUNK)
     cur_data = stream.read(CHUNK)
+
     values = [math.sqrt(abs(audioop.avg(cur_data, 4))) for i in range(num_samples)]
+    # print(len(values))
     values = sorted(values, reverse=True)
 
     r = sum(values[:int(num_samples * 0.2)]) / int(num_samples * 0.2)  # Average of 20% largest
 
     stream.close()
     p.terminate()
+    # print(r)
     return r
 
 
@@ -89,13 +92,24 @@ def run_graph(wav_data, labels, input_layer_name, output_layer_name,
         for node_id in top_k:
             human_string = labels[node_id]
             score = predictions[node_id]
+            if score < 0.25:
+                break
             print('%s (score = %.5f)' % (human_string, score))
-            for s in ['up', 'down', 'left', 'right']:
-                if human_string == s:
-                    for i in range(5):
+            if human_string == 'go':
+                pyautogui.press('p')
+                pyautogui.press('space')
+                break
+            elif human_string == 'stop':
+                pyautogui.press('p')
+                break
+            elif human_string == 'off':
+                pyautogui.press('esc')
+                break
+            else:
+                for s in ['up', 'down', 'left', 'right']:
+                    if human_string == s:
                         pyautogui.press(s)
-
-                    break
+                        break
         return 0
 
 
@@ -121,9 +135,12 @@ def label_wav(wav, labels, graph, input_name, output_name, how_many_labels):
     print("Measuring Noise...")
     intensityArr = []
     for i in range(30):
-        intensityArr.append(meausureAudioIntensity())
-    noiseIntensityAverage = sum(intensityArr) / len(intensityArr)
-    print(noiseIntensityAverage)
+        # t0 = time.time()
+        intensityArr.append(measureAudioIntensity())
+        # print(time.time() - t0)
+    tmpArr = sorted(intensityArr, reverse=True)
+    noiseIntensityAverage = sum(tmpArr[:int(0.2 * len(tmpArr))]) / int(0.2 * len(tmpArr))
+    print("noiseAverage: {}".format(noiseIntensityAverage))
 
     # start Recording
     p = pyaudio.PyAudio()
@@ -132,7 +149,10 @@ def label_wav(wav, labels, graph, input_name, output_name, how_many_labels):
     prev_data2 = []
     prev_data3 = []
     prev_data4 = []
-    INTENSITY = noiseIntensityAverage * 2.5
+    # INTENSITY = noiseIntensityAverage * 2.3
+    INTENSITY = 2100
+    print("INTENSITY: {}".format(INTENSITY))
+    print("TimeElapsed: {}".format(time.time() - startTime))
     print("Ready!\n\n")
     while True:
         stream = p.open(format=FORMAT, channels=CHANNELS, rate=RATE, input=True, frames_per_buffer=CHUNK)
@@ -172,6 +192,12 @@ def label_wav(wav, labels, graph, input_name, output_name, how_many_labels):
 
 
 if __name__ == '__main__':
+    # subprocess.call('pulseaudio --kill', shell=True)
+    # subprocess.call('pulseaudio --start', shell=True)
+    # subprocess.call('jack_control exit', shell=True)
+    # subprocess.call('jack_control start', shell=True)
+    startTime = time.time()
+
     WAVE_OUTPUT_FILENAME = "file.wav"
     labelFileName = "conv_actions_labels.txt"
     graphFileName = "conv_actions_frozen.pb"

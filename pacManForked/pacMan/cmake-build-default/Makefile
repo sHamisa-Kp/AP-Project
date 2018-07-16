@@ -204,33 +204,6 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/pacMan.dir/build.make CMakeFiles/pacMan.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-menu.o: menu.cpp.o
-
-.PHONY : menu.o
-
-# target to build an object file
-menu.cpp.o:
-	$(MAKE) -f CMakeFiles/pacMan.dir/build.make CMakeFiles/pacMan.dir/menu.cpp.o
-.PHONY : menu.cpp.o
-
-menu.i: menu.cpp.i
-
-.PHONY : menu.i
-
-# target to preprocess a source file
-menu.cpp.i:
-	$(MAKE) -f CMakeFiles/pacMan.dir/build.make CMakeFiles/pacMan.dir/menu.cpp.i
-.PHONY : menu.cpp.i
-
-menu.s: menu.cpp.s
-
-.PHONY : menu.s
-
-# target to generate assembly for a file
-menu.cpp.s:
-	$(MAKE) -f CMakeFiles/pacMan.dir/build.make CMakeFiles/pacMan.dir/menu.cpp.s
-.PHONY : menu.cpp.s
-
 options.o: options.cpp.o
 
 .PHONY : options.o
@@ -411,9 +384,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... menu.o"
-	@echo "... menu.i"
-	@echo "... menu.s"
 	@echo "... options.o"
 	@echo "... options.i"
 	@echo "... options.s"

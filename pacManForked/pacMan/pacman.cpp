@@ -2,15 +2,12 @@
 
 Pacman::Pacman() {
     animestate = 0;
-    //    death=0;
     pacx = 400 / 2;
     pacy = 360;
     x = 10;
     y = 10;
     height = 23;
     width = 23;
-
-    // This will load pacman images
     direction = 4;
     right1.load(":/images/pacround.png");
     right2.load(":/images/pacright1.png");
@@ -38,7 +35,7 @@ QRectF Pacman::boundingRect() const {
 
 void Pacman::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) {
     // sets the correct images to each direction.
-    switch (direction) {
+    switch(direction) {
         case 1:
             if (animestate < 2) {
                 painter->drawPixmap(pacx - x, pacy - y, height, width, left1);
@@ -104,9 +101,5 @@ void Pacman::setpacy(int y) {
 
 void Pacman::setDirection(int dir) {
     direction = dir;
-}
-
-void Pacman::setDeath(int d) {
-    death = d;
 }
 
