@@ -1318,7 +1318,7 @@ void Pacmanwindow::updater()
 {
     // This will display the lives and level
     ui->livesLcdNumber_2->display(lives);
-    ui->levelLcdNumber_2->display(level);
+//    ui->levelLcdNumber_2->display(level);
     checklost();
     pacman_move();
 

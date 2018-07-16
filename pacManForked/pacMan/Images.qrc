@@ -39,7 +39,6 @@
         <file>images/ghostupred2.png</file>
         <file>images/dot.png</file>
         <file>images/pac_map_old.png</file>
-        <file>images/pacround.png</file>
         <file>images/pacright1.png</file>
         <file>images/pacright2.png</file>
         <file>images/pacup1.png</file>
@@ -59,5 +58,9 @@
         <file>images/die7.png</file>
         <file>images/die8.png</file>
         <file>images/die9.png</file>
+        <file>images/pacroundleft.png</file>
+        <file>images/pacroundright.png</file>
+        <file>images/pacrounddown.png</file>
+        <file>images/pacroundup.png</file>
     </qresource>
 </RCC>

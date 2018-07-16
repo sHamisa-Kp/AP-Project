@@ -227,6 +227,7 @@ DIST          = ../../../../Qt5.11.0/5.11.0/gcc_64/mkspecs/features/spec_pre.prf
 		../../../../Qt5.11.0/5.11.0/gcc_64/mkspecs/features/qt_config.prf \
 		../../../../Qt5.11.0/5.11.0/gcc_64/mkspecs/linux-g++/qmake.conf \
 		../../../../Qt5.11.0/5.11.0/gcc_64/mkspecs/features/spec_post.prf \
+		../pacMan/.qmake.stash \
 		../../../../Qt5.11.0/5.11.0/gcc_64/mkspecs/features/exclusive_builds.prf \
 		../../../../Qt5.11.0/5.11.0/gcc_64/mkspecs/features/toolchain.prf \
 		../../../../Qt5.11.0/5.11.0/gcc_64/mkspecs/features/default_pre.prf \
@@ -421,6 +422,7 @@ Makefile: ../pacMan/pacMan.pro ../../../../Qt5.11.0/5.11.0/gcc_64/mkspecs/linux-
 		../../../../Qt5.11.0/5.11.0/gcc_64/mkspecs/features/qt_config.prf \
 		../../../../Qt5.11.0/5.11.0/gcc_64/mkspecs/linux-g++/qmake.conf \
 		../../../../Qt5.11.0/5.11.0/gcc_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		../../../../Qt5.11.0/5.11.0/gcc_64/mkspecs/features/exclusive_builds.prf \
 		../../../../Qt5.11.0/5.11.0/gcc_64/mkspecs/features/toolchain.prf \
 		../../../../Qt5.11.0/5.11.0/gcc_64/mkspecs/features/default_pre.prf \
@@ -596,6 +598,7 @@ Makefile: ../pacMan/pacMan.pro ../../../../Qt5.11.0/5.11.0/gcc_64/mkspecs/linux-
 ../../../../Qt5.11.0/5.11.0/gcc_64/mkspecs/features/qt_config.prf:
 ../../../../Qt5.11.0/5.11.0/gcc_64/mkspecs/linux-g++/qmake.conf:
 ../../../../Qt5.11.0/5.11.0/gcc_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 ../../../../Qt5.11.0/5.11.0/gcc_64/mkspecs/features/exclusive_builds.prf:
 ../../../../Qt5.11.0/5.11.0/gcc_64/mkspecs/features/toolchain.prf:
 ../../../../Qt5.11.0/5.11.0/gcc_64/mkspecs/features/default_pre.prf:
@@ -680,6 +683,7 @@ qrc_Images.cpp: ../pacMan/Images.qrc \
 		../pacMan/images/paclogo.png \
 		../pacMan/images/ghostrightorange2.png \
 		../pacMan/images/ghostdown2.png \
+		../pacMan/images/pacrounddown.png \
 		../pacMan/images/ghostdownblue2.png \
 		../pacMan/images/ghostrightblue2.png \
 		../pacMan/images/ghostupblue2.png \
@@ -701,15 +705,16 @@ qrc_Images.cpp: ../pacMan/Images.qrc \
 		../pacMan/images/ghostupred1.png \
 		../pacMan/images/ghostscaredwhite1.png \
 		../pacMan/images/pacright1.png \
-		../pacMan/images/pacround.png \
 		../pacMan/images/die2.png \
 		../pacMan/images/ghostdownred2.png \
+		../pacMan/images/pacroundleft.png \
 		../pacMan/images/ghostup2.png \
 		../pacMan/images/ghostleftorange2.png \
 		../pacMan/images/ghostuporange2.png \
 		../pacMan/images/die1.png \
 		../pacMan/images/ghostdownred1.png \
 		../pacMan/images/ghostdownorange2.png \
+		../pacMan/images/pacroundup.png \
 		../pacMan/images/ghostup1.png \
 		../pacMan/images/ghostleft2.png \
 		../pacMan/images/ghostleftorange1.png \
@@ -726,6 +731,7 @@ qrc_Images.cpp: ../pacMan/Images.qrc \
 		../pacMan/images/ghostleftred1.png \
 		../pacMan/images/ghostright2.png \
 		../pacMan/images/die8.png \
+		../pacMan/images/pacroundright.png \
 		../pacMan/images/pacdown2.png \
 		../pacMan/images/pacleft2.png \
 		../pacMan/images/ghostrightred2.png \
@@ -2470,6 +2476,18 @@ menu.o: ../pacMan/menu.cpp ../pacMan/menu.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/QShortcut \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qshortcut.h \
 		ui_menu.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtCore/QVariant \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/QApplication \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qapplication.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qdesktopwidget.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/QPushButton \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qpushbutton.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qabstractbutton.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/QVBoxLayout \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qboxlayout.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qlayout.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qlayoutitem.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qgridlayout.h \
 		../pacMan/options.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/QMessageBox \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qmessagebox.h \
@@ -2588,13 +2606,44 @@ options.o: ../pacMan/options.cpp ../pacMan/options.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qmessagebox.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qdialog.h \
 		ui_options.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtCore/QVariant \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/QIcon \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/qicon.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/QApplication \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qapplication.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtCore/qcoreapplication.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtCore/qeventloop.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qdesktopwidget.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/qguiapplication.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/qinputmethod.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/QLabel \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qlabel.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qframe.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/QPlainTextEdit \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qplaintextedit.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qtextedit.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/qtextdocument.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/qtextoption.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/qtextcursor.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/qtextformat.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/qpen.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/qtextlayout.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/qglyphrun.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/qrawfont.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/qfontdatabase.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/QPushButton \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qpushbutton.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qabstractbutton.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/QRadioButton \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qradiobutton.h \
 		../pacMan/pacmanwindow.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/QDialog \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtCore/QtCore \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtCore/QtCoreDepends \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtCore/qabstractanimation.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtCore/qabstracteventdispatcher.h \
-		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtCore/qeventloop.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtCore/qabstractitemmodel.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtCore/qabstractnativeeventfilter.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtCore/qabstractproxymodel.h \
@@ -2611,7 +2660,6 @@ options.o: ../pacMan/options.cpp ../pacMan/options.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtCore/qcollator.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtCore/qcommandlineoption.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtCore/qcommandlineparser.h \
-		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtCore/qcoreapplication.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtCore/qcryptographichash.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtCore/qdatetime.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtCore/qdeadlinetimer.h \
@@ -2706,16 +2754,6 @@ options.o: ../pacMan/options.cpp ../pacMan/options.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtCore/qtcoreversion.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/QtGui \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/QtGuiDepends \
-		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/qtextlayout.h \
-		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/qtextformat.h \
-		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/qpen.h \
-		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/qtextoption.h \
-		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/qglyphrun.h \
-		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/qrawfont.h \
-		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/qfontdatabase.h \
-		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/qtextcursor.h \
-		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/qtextdocument.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/qaccessible.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/qaccessiblebridge.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/qaccessibleobject.h \
@@ -2727,7 +2765,6 @@ options.o: ../pacMan/options.cpp ../pacMan/options.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtCore/QRect \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/qsurface.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/qsurfaceformat.h \
-		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/qicon.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/qbitmap.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/qclipboard.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/qdesktopservices.h \
@@ -2735,8 +2772,6 @@ options.o: ../pacMan/options.cpp ../pacMan/options.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/qgenericmatrix.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/qgenericplugin.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/qgenericpluginfactory.h \
-		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/qguiapplication.h \
-		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/qinputmethod.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/qiconengine.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/qiconengineplugin.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/qimageiohandler.h \
@@ -3371,10 +3406,25 @@ pacmanwindow.o: ../pacMan/pacmanwindow.cpp ../pacMan/pacmanwindow.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/QShortcut \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qshortcut.h \
 		ui_pacmanwindow.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtCore/QVariant \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/QApplication \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qapplication.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qdesktopwidget.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/QGraphicsView \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qgraphicsview.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qscrollarea.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qframe.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/QLCDNumber \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qlcdnumber.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/QLabel \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qlabel.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/QPushButton \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qpushbutton.h \
+		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qabstractbutton.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtCore/QThread \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/QtWidgets \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/QtWidgetsDepends \
-		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qabstractbutton.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qstyleoption.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qabstractspinbox.h \
@@ -3384,14 +3434,10 @@ pacmanwindow.o: ../pacMan/pacmanwindow.cpp ../pacMan/pacmanwindow.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qtabbar.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qtabwidget.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qrubberband.h \
-		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qframe.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qabstractitemview.h \
-		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qabstractscrollarea.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qaccessiblewidget.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qaction.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qactiongroup.h \
-		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qapplication.h \
-		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qdesktopwidget.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qboxlayout.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qlayout.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qlayoutitem.h \
@@ -3404,7 +3450,6 @@ pacmanwindow.o: ../pacMan/pacmanwindow.cpp ../pacMan/pacmanwindow.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qcolumnview.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qcombobox.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qcommandlinkbutton.h \
-		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qpushbutton.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qcommonstyle.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qcompleter.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qdatawidgetmapper.h \
@@ -3437,8 +3482,6 @@ pacmanwindow.o: ../pacMan/pacmanwindow.cpp ../pacMan/pacmanwindow.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qgraphicssceneevent.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qgraphicstransform.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/QVector3D \
-		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qgraphicsview.h \
-		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qscrollarea.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qgroupbox.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qheaderview.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qinputdialog.h \
@@ -3447,8 +3490,6 @@ pacmanwindow.o: ../pacMan/pacmanwindow.cpp ../pacMan/pacmanwindow.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qitemeditorfactory.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qkeyeventtransition.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qkeysequenceedit.h \
-		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qlabel.h \
-		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qlcdnumber.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qlistview.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qlistwidget.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qmainwindow.h \
@@ -3473,7 +3514,6 @@ pacmanwindow.o: ../pacMan/pacmanwindow.cpp ../pacMan/pacmanwindow.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/QScrollerProperties \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qscrollerproperties.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtCore/QMetaType \
-		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtCore/QVariant \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qsizegrip.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qspinbox.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qsplashscreen.h \

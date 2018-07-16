@@ -6,23 +6,23 @@ Pacman::Pacman() {
     pacy = 360;
     x = 10;
     y = 10;
-    height = 23;
-    width = 23;
+    height = 35;
+    width = 35;
     direction = 4; //default direction of pacman
 
-    right1.load(":/images/pacround.png");
+    right1.load(":/images/pacroundright.png");
     right2.load(":/images/pacright1.png");
     right3.load(":/images/pacright2.png");
 
-    up1.load(":/images/pacround.png");
+    up1.load(":/images/pacroundup.png");
     up2.load(":/images/pacup1.png");
     up3.load(":/images/pacup2.png");
 
-    down1.load(":/images/pacround.png");
+    down1.load(":/images/pacrounddown.png");
     down2.load(":/images/pacdown1.png");
     down3.load(":/images/pacdown2.png");
 
-    left1.load(":/images/pacround.png");
+    left1.load(":/images/pacroundleft.png");
     left2.load(":/images/pacleft1.png");
     left3.load(":/images/pacleft2.png");
 
