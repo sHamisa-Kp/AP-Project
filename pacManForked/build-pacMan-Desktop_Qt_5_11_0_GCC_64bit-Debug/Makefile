@@ -53,33 +53,19 @@ OBJECTS_DIR   = ./
 SOURCES       = ../pacMan/main.cpp \
 		../pacMan/ball.cpp \
 		../pacMan/ghost.cpp \
-		../pacMan/menu.cpp \
-		../pacMan/options.cpp \
 		../pacMan/pacman.cpp \
 		../pacMan/pacmanboard.cpp \
 		../pacMan/pacmanwindow.cpp \
 		../pacMan/powerball.cpp \
-		../pacMan/textdrawing.cpp qrc_Resources.cpp \
-		qrc_Images.cpp \
-		qrc_Sounds.cpp \
-		moc_menu.cpp \
-		moc_options.cpp \
-		moc_pacmanwindow.cpp
+		../pacMan/textdrawing.cpp moc_pacmanwindow.cpp
 OBJECTS       = main.o \
 		ball.o \
 		ghost.o \
-		menu.o \
-		options.o \
 		pacman.o \
 		pacmanboard.o \
 		pacmanwindow.o \
 		powerball.o \
 		textdrawing.o \
-		qrc_Resources.o \
-		qrc_Images.o \
-		qrc_Sounds.o \
-		moc_menu.o \
-		moc_options.o \
 		moc_pacmanwindow.o
 DIST          = ../../../../Qt5.11.0/5.11.0/gcc_64/mkspecs/features/spec_pre.prf \
 		../../../../Qt5.11.0/5.11.0/gcc_64/mkspecs/common/unix.conf \
@@ -249,8 +235,6 @@ DIST          = ../../../../Qt5.11.0/5.11.0/gcc_64/mkspecs/features/spec_pre.prf
 		../../../../Qt5.11.0/5.11.0/gcc_64/mkspecs/features/lex.prf \
 		../pacMan/pacMan.pro ../pacMan/ball.h \
 		../pacMan/ghost.h \
-		../pacMan/menu.h \
-		../pacMan/options.h \
 		../pacMan/pacman.h \
 		../pacMan/pacmanboard.h \
 		../pacMan/pacmanwindow.h \
@@ -258,8 +242,6 @@ DIST          = ../../../../Qt5.11.0/5.11.0/gcc_64/mkspecs/features/spec_pre.prf
 		../pacMan/textdrawing.h ../pacMan/main.cpp \
 		../pacMan/ball.cpp \
 		../pacMan/ghost.cpp \
-		../pacMan/menu.cpp \
-		../pacMan/options.cpp \
 		../pacMan/pacman.cpp \
 		../pacMan/pacmanboard.cpp \
 		../pacMan/pacmanwindow.cpp \
@@ -443,6 +425,7 @@ Makefile: ../pacMan/pacMan.pro ../../../../Qt5.11.0/5.11.0/gcc_64/mkspecs/linux-
 		../../../../Qt5.11.0/5.11.0/gcc_64/mkspecs/features/yacc.prf \
 		../../../../Qt5.11.0/5.11.0/gcc_64/mkspecs/features/lex.prf \
 		../pacMan/pacMan.pro \
+<<<<<<< HEAD
 		../pacMan/Resources.qrc \
 		../pacMan/Images.qrc \
 		../pacMan/Sounds.qrc \
@@ -451,6 +434,13 @@ Makefile: ../pacMan/pacMan.pro ../../../../Qt5.11.0/5.11.0/gcc_64/mkspecs/linux-
 		../../../../Qt5.11.0/5.11.0/gcc_64/lib/libQt5Gui.prl \
 		../../../../Qt5.11.0/5.11.0/gcc_64/lib/libQt5Network.prl \
 		../../../../Qt5.11.0/5.11.0/gcc_64/lib/libQt5Core.prl
+=======
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/lib/libQt5Widgets.prl \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/lib/libQt5Multimedia.prl \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/lib/libQt5Gui.prl \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/lib/libQt5Network.prl \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/lib/libQt5Core.prl
+>>>>>>> master
 	$(QMAKE) -o Makefile ../pacMan/pacMan.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
 ../../../../Qt5.11.0/5.11.0/gcc_64/mkspecs/features/spec_pre.prf:
 ../../../../Qt5.11.0/5.11.0/gcc_64/mkspecs/common/unix.conf:
@@ -619,6 +609,7 @@ Makefile: ../pacMan/pacMan.pro ../../../../Qt5.11.0/5.11.0/gcc_64/mkspecs/linux-
 ../../../../Qt5.11.0/5.11.0/gcc_64/mkspecs/features/yacc.prf:
 ../../../../Qt5.11.0/5.11.0/gcc_64/mkspecs/features/lex.prf:
 ../pacMan/pacMan.pro:
+<<<<<<< HEAD
 ../pacMan/Resources.qrc:
 ../pacMan/Images.qrc:
 ../pacMan/Sounds.qrc:
@@ -627,6 +618,13 @@ Makefile: ../pacMan/pacMan.pro ../../../../Qt5.11.0/5.11.0/gcc_64/mkspecs/linux-
 ../../../../Qt5.11.0/5.11.0/gcc_64/lib/libQt5Gui.prl:
 ../../../../Qt5.11.0/5.11.0/gcc_64/lib/libQt5Network.prl:
 ../../../../Qt5.11.0/5.11.0/gcc_64/lib/libQt5Core.prl:
+=======
+/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/lib/libQt5Widgets.prl:
+/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/lib/libQt5Multimedia.prl:
+/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/lib/libQt5Gui.prl:
+/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/lib/libQt5Network.prl:
+/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/lib/libQt5Core.prl:
+>>>>>>> master
 qmake: FORCE
 	@$(QMAKE) -o Makefile ../pacMan/pacMan.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
 
@@ -641,10 +639,16 @@ dist: distdir FORCE
 distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
+<<<<<<< HEAD
 	$(COPY_FILE) --parents ../pacMan/Resources.qrc ../pacMan/Images.qrc ../pacMan/Sounds.qrc $(DISTDIR)/
 	$(COPY_FILE) --parents ../../../../Qt5.11.0/5.11.0/gcc_64/mkspecs/features/data/dummy.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ../pacMan/ball.h ../pacMan/ghost.h ../pacMan/menu.h ../pacMan/options.h ../pacMan/pacman.h ../pacMan/pacmanboard.h ../pacMan/pacmanwindow.h ../pacMan/powerball.h ../pacMan/textdrawing.h $(DISTDIR)/
 	$(COPY_FILE) --parents ../pacMan/main.cpp ../pacMan/ball.cpp ../pacMan/ghost.cpp ../pacMan/menu.cpp ../pacMan/options.cpp ../pacMan/pacman.cpp ../pacMan/pacmanboard.cpp ../pacMan/pacmanwindow.cpp ../pacMan/powerball.cpp ../pacMan/textdrawing.cpp $(DISTDIR)/
+=======
+	$(COPY_FILE) --parents /media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/mkspecs/features/data/dummy.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ../pacMan/ball.h ../pacMan/ghost.h ../pacMan/pacman.h ../pacMan/pacmanboard.h ../pacMan/pacmanwindow.h ../pacMan/powerball.h ../pacMan/textdrawing.h $(DISTDIR)/
+	$(COPY_FILE) --parents ../pacMan/main.cpp ../pacMan/ball.cpp ../pacMan/ghost.cpp ../pacMan/pacman.cpp ../pacMan/pacmanboard.cpp ../pacMan/pacmanwindow.cpp ../pacMan/powerball.cpp ../pacMan/textdrawing.cpp $(DISTDIR)/
+>>>>>>> master
 	$(COPY_FILE) --parents ../pacMan/pacmanwindow.ui $(DISTDIR)/
 
 
@@ -669,8 +673,9 @@ check: first
 
 benchmark: first
 
-compiler_rcc_make_all: qrc_Resources.cpp qrc_Images.cpp qrc_Sounds.cpp
+compiler_rcc_make_all:
 compiler_rcc_clean:
+<<<<<<< HEAD
 	-$(DEL_FILE) qrc_Resources.cpp qrc_Images.cpp qrc_Sounds.cpp
 qrc_Resources.cpp: ../pacMan/Resources.qrc \
 		../../../../Qt5.11.0/5.11.0/gcc_64/bin/rcc
@@ -750,14 +755,17 @@ qrc_Sounds.cpp: ../pacMan/Sounds.qrc \
 		../pacMan/Sound/pacman_intermission.wav
 	/home/shamisa/Qt5.11.0/5.11.0/gcc_64/bin/rcc -name Sounds ../pacMan/Sounds.qrc -o qrc_Sounds.cpp
 
+=======
+>>>>>>> master
 compiler_moc_predefs_make_all: moc_predefs.h
 compiler_moc_predefs_clean:
 	-$(DEL_FILE) moc_predefs.h
 moc_predefs.h: ../../../../Qt5.11.0/5.11.0/gcc_64/mkspecs/features/data/dummy.cpp
 	g++ -pipe -g -std=gnu++11 -Wall -W -dM -E -o moc_predefs.h ../../../../Qt5.11.0/5.11.0/gcc_64/mkspecs/features/data/dummy.cpp
 
-compiler_moc_header_make_all: moc_menu.cpp moc_options.cpp moc_pacmanwindow.cpp
+compiler_moc_header_make_all: moc_pacmanwindow.cpp
 compiler_moc_header_clean:
+<<<<<<< HEAD
 	-$(DEL_FILE) moc_menu.cpp moc_options.cpp moc_pacmanwindow.cpp
 moc_menu.cpp: ../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/QWidget \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qwidget.h \
@@ -1085,6 +1093,327 @@ moc_menu.cpp: ../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/QWidget \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtMultimedia/qtmultimedia-config.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtMultimedia/QSoundEffect \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtMultimedia/qsoundeffect.h \
+=======
+	-$(DEL_FILE) moc_pacmanwindow.cpp
+moc_pacmanwindow.cpp: /media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/QDialog \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qdialog.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtguiglobal.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qglobal.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qconfig-bootstrapped.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qconfig.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtcore-config.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsystemdetection.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qprocessordetection.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qcompilerdetection.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtypeinfo.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsysinfo.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qlogging.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qflags.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qatomic.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qbasicatomic.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qatomic_bootstrap.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qgenericatomic.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qatomic_cxx11.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qglobalstatic.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qmutex.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qnumeric.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qversiontagging.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtgui-config.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qtwidgets-config.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qwidget.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qwindowdefs.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qobjectdefs.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qnamespace.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qobjectdefs_impl.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qwindowdefs_win.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qobject.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstring.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qchar.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qbytearray.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qrefcount.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qarraydata.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstringliteral.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstringalgorithms.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstringview.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstringbuilder.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qlist.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qalgorithms.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qiterator.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qhashfunctions.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qpair.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qbytearraylist.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstringlist.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qregexp.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstringmatcher.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qcoreevent.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qscopedpointer.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qmetatype.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qvarlengtharray.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qcontainerfwd.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qobject_impl.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qmargins.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpaintdevice.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qrect.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsize.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qpoint.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpalette.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qcolor.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qrgb.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qrgba64.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qbrush.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qvector.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qmatrix.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpolygon.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qregion.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qdatastream.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qiodevice.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qline.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtransform.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpainterpath.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qimage.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpixelformat.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpixmap.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsharedpointer.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qshareddata.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qhash.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsharedpointer_impl.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qfont.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qfontmetrics.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qfontinfo.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qsizepolicy.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qcursor.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qkeysequence.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qevent.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qvariant.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qmap.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qdebug.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtextstream.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qlocale.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qset.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qcontiguouscache.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qurl.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qurlquery.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qfile.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qfiledevice.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qvector2d.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtouchdevice.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/QtCore \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/QtCoreDepends \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qabstractanimation.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qabstracteventdispatcher.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qeventloop.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qabstractitemmodel.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qabstractnativeeventfilter.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qabstractproxymodel.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qabstractstate.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qabstracttransition.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qanimationgroup.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qarraydataops.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qarraydatapointer.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qbasictimer.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qbitarray.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qbuffer.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qbytearraymatcher.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qcache.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qcollator.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qcommandlineoption.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qcommandlineparser.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qcoreapplication.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qcryptographichash.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qdatetime.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qdeadlinetimer.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qelapsedtimer.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qdir.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qfileinfo.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qdiriterator.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qeasingcurve.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qendian.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qeventtransition.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qexception.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qfactoryinterface.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qfileselector.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/QObject \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/QStringList \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qfilesystemwatcher.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qfinalstate.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qfuture.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qfutureinterface.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qrunnable.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qresultstore.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qfuturesynchronizer.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qfuturewatcher.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qhistorystate.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qidentityproxymodel.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qisenum.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qitemselectionmodel.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qjsonarray.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qjsonvalue.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qjsondocument.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qjsonobject.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qlibrary.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qlibraryinfo.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qversionnumber.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qlinkedlist.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qlockfile.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qloggingcategory.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qmath.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qmessageauthenticationcode.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qmetaobject.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qmimedata.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qmimedatabase.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qmimetype.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qobjectcleanuphandler.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qoperatingsystemversion.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qparallelanimationgroup.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qpauseanimation.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qplugin.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qpointer.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qpluginloader.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qprocess.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qpropertyanimation.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qvariantanimation.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qqueue.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qrandom.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qreadwritelock.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qregularexpression.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qresource.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsavefile.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qscopedvaluerollback.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsemaphore.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsequentialanimationgroup.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsettings.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsharedmemory.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsignalmapper.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsignaltransition.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsocketnotifier.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsortfilterproxymodel.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstack.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstandardpaths.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstate.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstatemachine.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstorageinfo.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstringlistmodel.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsystemsemaphore.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtemporarydir.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtemporaryfile.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtextboundaryfinder.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtextcodec.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qthread.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qthreadpool.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qthreadstorage.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtimeline.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtimer.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtimezone.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtranslator.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtypetraits.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/quuid.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qwaitcondition.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qwineventnotifier.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qxmlstream.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtcoreversion.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/QtGui \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/QtGuiDepends \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtextlayout.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtextformat.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpen.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtextoption.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qglyphrun.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qrawfont.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qfontdatabase.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtextcursor.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtextdocument.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qaccessible.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qaccessiblebridge.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qaccessibleobject.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qaccessibleplugin.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qbackingstore.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qwindow.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/QEvent \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/QMargins \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/QRect \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qsurface.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qsurfaceformat.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qicon.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qbitmap.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qclipboard.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qdesktopservices.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qdrag.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qgenericmatrix.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qgenericplugin.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qgenericpluginfactory.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qguiapplication.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qinputmethod.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qiconengine.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qiconengineplugin.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qimageiohandler.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qimagereader.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qimagewriter.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qmatrix4x4.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qvector3d.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qvector4d.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qquaternion.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qmovie.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qoffscreensurface.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopengl.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qt_windows.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopengles2ext.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopenglext.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopenglbuffer.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopenglcontext.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/QScopedPointer \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/QSurfaceFormat \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopenglversionfunctions.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopengldebug.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopenglextrafunctions.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopenglfunctions.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopenglframebufferobject.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopenglpaintdevice.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopenglpixeltransferoptions.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/QSharedDataPointer \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopenglshaderprogram.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopengltexture.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopengltextureblitter.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/QMatrix3x3 \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/QMatrix4x4 \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopengltimerquery.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopenglvertexarrayobject.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopenglwindow.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/QPaintDeviceWindow \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpaintdevicewindow.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/QWindow \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/QPaintDevice \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/QOpenGLContext \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/QImage \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpagedpaintdevice.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpagelayout.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpagesize.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpaintengine.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpainter.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpdfwriter.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpicture.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpictureformatplugin.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpixmapcache.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qrasterwindow.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qscreen.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/QList \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/QSize \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/QSizeF \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/QTransform \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qsessionmanager.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qstandarditemmodel.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qstatictext.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qstylehints.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qsyntaxhighlighter.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtextobject.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtextdocumentfragment.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtextdocumentwriter.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtextlist.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtexttable.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qvalidator.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtguiversion.h \
+>>>>>>> master
 		../pacMan/pacman.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/QPainter \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/QGraphicsItem \
@@ -1097,6 +1426,7 @@ moc_menu.cpp: ../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/QWidget \
 		../pacMan/powerball.h \
 		../pacMan/ghost.h \
 		../pacMan/textdrawing.h \
+<<<<<<< HEAD
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/QShortcut \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qshortcut.h \
 		../pacMan/menu.h \
@@ -1557,6 +1887,15 @@ moc_pacmanwindow.cpp: ../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/QDial
 		../../../../Qt5.11.0/5.11.0/gcc_64/bin/moc
 	/home/shamisa/Qt5.11.0/5.11.0/gcc_64/bin/moc $(DEFINES) --include ./moc_predefs.h -I/home/shamisa/Qt5.11.0/5.11.0/gcc_64/mkspecs/linux-g++ -I/home/shamisa/Desktop/AP-Project/pacManForked/pacMan -I/home/shamisa/Qt5.11.0/5.11.0/gcc_64/include -I/home/shamisa/Qt5.11.0/5.11.0/gcc_64/include/QtWidgets -I/home/shamisa/Qt5.11.0/5.11.0/gcc_64/include/QtMultimedia -I/home/shamisa/Qt5.11.0/5.11.0/gcc_64/include/QtGui -I/home/shamisa/Qt5.11.0/5.11.0/gcc_64/include/QtNetwork -I/home/shamisa/Qt5.11.0/5.11.0/gcc_64/include/QtCore -I. -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../pacMan/pacmanwindow.h -o moc_pacmanwindow.cpp
 
+=======
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/QShortcut \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qshortcut.h \
+		../pacMan/pacmanwindow.h \
+		moc_predefs.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/bin/moc
+	/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/bin/moc $(DEFINES) --include ./moc_predefs.h -I/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/mkspecs/linux-g++ -I/home/divar/Desktop/AP/AP-Project/pacManForked/pacMan -I/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include -I/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets -I/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtMultimedia -I/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui -I/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtNetwork -I/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore -I. -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../pacMan/pacmanwindow.h -o moc_pacmanwindow.cpp
+
+>>>>>>> master
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
 compiler_moc_source_make_all:
@@ -1565,8 +1904,13 @@ compiler_uic_make_all: ui_pacmanwindow.h
 compiler_uic_clean:
 	-$(DEL_FILE) ui_pacmanwindow.h
 ui_pacmanwindow.h: ../pacMan/pacmanwindow.ui \
+<<<<<<< HEAD
 		../../../../Qt5.11.0/5.11.0/gcc_64/bin/uic
 	/home/shamisa/Qt5.11.0/5.11.0/gcc_64/bin/uic ../pacMan/pacmanwindow.ui -o ui_pacmanwindow.h
+=======
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/bin/uic
+	/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/bin/uic ../pacMan/pacmanwindow.ui -o ui_pacmanwindow.h
+>>>>>>> master
 
 compiler_yacc_decl_make_all:
 compiler_yacc_decl_clean:
@@ -1574,6 +1918,7 @@ compiler_yacc_impl_make_all:
 compiler_yacc_impl_clean:
 compiler_lex_make_all:
 compiler_lex_clean:
+<<<<<<< HEAD
 compiler_clean: compiler_rcc_clean compiler_moc_predefs_clean compiler_moc_header_clean compiler_uic_clean 
 
 ####### Compile
@@ -2835,6 +3180,334 @@ options.o: ../pacMan/options.cpp ../pacMan/options.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtMultimedia/qtmultimedia-config.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtMultimedia/QSoundEffect \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtMultimedia/qsoundeffect.h \
+=======
+compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean compiler_uic_clean 
+
+####### Compile
+
+main.o: ../pacMan/main.cpp /media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/QApplication \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qapplication.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtguiglobal.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qglobal.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qconfig-bootstrapped.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qconfig.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtcore-config.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsystemdetection.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qprocessordetection.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qcompilerdetection.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtypeinfo.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsysinfo.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qlogging.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qflags.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qatomic.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qbasicatomic.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qatomic_bootstrap.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qgenericatomic.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qatomic_cxx11.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qglobalstatic.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qmutex.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qnumeric.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qversiontagging.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtgui-config.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qtwidgets-config.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qcoreapplication.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstring.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qchar.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qbytearray.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qrefcount.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qnamespace.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qarraydata.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstringliteral.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstringalgorithms.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstringview.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstringbuilder.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qobject.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qobjectdefs.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qobjectdefs_impl.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qlist.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qalgorithms.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qiterator.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qhashfunctions.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qpair.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qbytearraylist.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstringlist.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qregexp.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstringmatcher.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qcoreevent.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qscopedpointer.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qmetatype.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qvarlengtharray.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qcontainerfwd.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qobject_impl.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qeventloop.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qwindowdefs.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qwindowdefs_win.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qpoint.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsize.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qcursor.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qdesktopwidget.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qwidget.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qmargins.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpaintdevice.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qrect.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpalette.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qcolor.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qrgb.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qrgba64.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qbrush.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qvector.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qmatrix.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpolygon.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qregion.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qdatastream.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qiodevice.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qline.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtransform.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpainterpath.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qimage.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpixelformat.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpixmap.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsharedpointer.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qshareddata.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qhash.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsharedpointer_impl.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qfont.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qfontmetrics.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qfontinfo.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qsizepolicy.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qkeysequence.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qevent.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qvariant.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qmap.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qdebug.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtextstream.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qlocale.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qset.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qcontiguouscache.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qurl.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qurlquery.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qfile.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qfiledevice.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qvector2d.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtouchdevice.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qguiapplication.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qinputmethod.h \
+		../pacMan/pacmanwindow.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/QDialog \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qdialog.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/QtCore \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/QtCoreDepends \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qabstractanimation.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qabstracteventdispatcher.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qabstractitemmodel.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qabstractnativeeventfilter.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qabstractproxymodel.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qabstractstate.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qabstracttransition.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qanimationgroup.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qarraydataops.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qarraydatapointer.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qbasictimer.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qbitarray.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qbuffer.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qbytearraymatcher.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qcache.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qcollator.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qcommandlineoption.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qcommandlineparser.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qcryptographichash.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qdatetime.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qdeadlinetimer.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qelapsedtimer.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qdir.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qfileinfo.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qdiriterator.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qeasingcurve.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qendian.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qeventtransition.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qexception.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qfactoryinterface.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qfileselector.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/QObject \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/QStringList \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qfilesystemwatcher.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qfinalstate.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qfuture.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qfutureinterface.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qrunnable.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qresultstore.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qfuturesynchronizer.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qfuturewatcher.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qhistorystate.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qidentityproxymodel.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qisenum.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qitemselectionmodel.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qjsonarray.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qjsonvalue.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qjsondocument.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qjsonobject.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qlibrary.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qlibraryinfo.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qversionnumber.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qlinkedlist.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qlockfile.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qloggingcategory.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qmath.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qmessageauthenticationcode.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qmetaobject.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qmimedata.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qmimedatabase.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qmimetype.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qobjectcleanuphandler.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qoperatingsystemversion.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qparallelanimationgroup.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qpauseanimation.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qplugin.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qpointer.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qpluginloader.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qprocess.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qpropertyanimation.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qvariantanimation.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qqueue.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qrandom.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qreadwritelock.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qregularexpression.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qresource.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsavefile.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qscopedvaluerollback.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsemaphore.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsequentialanimationgroup.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsettings.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsharedmemory.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsignalmapper.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsignaltransition.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsocketnotifier.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsortfilterproxymodel.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstack.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstandardpaths.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstate.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstatemachine.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstorageinfo.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstringlistmodel.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsystemsemaphore.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtemporarydir.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtemporaryfile.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtextboundaryfinder.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtextcodec.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qthread.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qthreadpool.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qthreadstorage.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtimeline.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtimer.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtimezone.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtranslator.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtypetraits.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/quuid.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qwaitcondition.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qwineventnotifier.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qxmlstream.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtcoreversion.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/QtGui \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/QtGuiDepends \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtextlayout.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtextformat.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpen.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtextoption.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qglyphrun.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qrawfont.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qfontdatabase.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtextcursor.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtextdocument.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qaccessible.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qaccessiblebridge.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qaccessibleobject.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qaccessibleplugin.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qbackingstore.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qwindow.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/QEvent \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/QMargins \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/QRect \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qsurface.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qsurfaceformat.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qicon.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qbitmap.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qclipboard.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qdesktopservices.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qdrag.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qgenericmatrix.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qgenericplugin.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qgenericpluginfactory.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qiconengine.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qiconengineplugin.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qimageiohandler.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qimagereader.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qimagewriter.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qmatrix4x4.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qvector3d.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qvector4d.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qquaternion.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qmovie.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qoffscreensurface.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopengl.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qt_windows.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopengles2ext.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopenglext.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopenglbuffer.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopenglcontext.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/QScopedPointer \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/QSurfaceFormat \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopenglversionfunctions.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopengldebug.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopenglextrafunctions.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopenglfunctions.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopenglframebufferobject.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopenglpaintdevice.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopenglpixeltransferoptions.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/QSharedDataPointer \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopenglshaderprogram.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopengltexture.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopengltextureblitter.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/QMatrix3x3 \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/QMatrix4x4 \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopengltimerquery.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopenglvertexarrayobject.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopenglwindow.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/QPaintDeviceWindow \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpaintdevicewindow.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/QWindow \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/QPaintDevice \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/QOpenGLContext \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/QImage \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpagedpaintdevice.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpagelayout.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpagesize.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpaintengine.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpainter.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpdfwriter.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpicture.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpictureformatplugin.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpixmapcache.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qrasterwindow.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qscreen.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/QList \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/QSize \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/QSizeF \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/QTransform \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qsessionmanager.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qstandarditemmodel.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qstatictext.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qstylehints.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qsyntaxhighlighter.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtextobject.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtextdocumentfragment.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtextdocumentwriter.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtextlist.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtexttable.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qvalidator.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtguiversion.h \
+>>>>>>> master
 		../pacMan/pacman.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/QPainter \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/QGraphicsItem \
@@ -2847,10 +3520,216 @@ options.o: ../pacMan/options.cpp ../pacMan/options.h \
 		../pacMan/powerball.h \
 		../pacMan/ghost.h \
 		../pacMan/textdrawing.h \
+<<<<<<< HEAD
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/QShortcut \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qshortcut.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o options.o ../pacMan/options.cpp
+=======
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/QShortcut \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qshortcut.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../pacMan/main.cpp
+
+ball.o: ../pacMan/ball.cpp ../pacMan/ball.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/QPainter \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpainter.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtguiglobal.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qglobal.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qconfig-bootstrapped.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qconfig.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtcore-config.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsystemdetection.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qprocessordetection.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qcompilerdetection.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtypeinfo.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsysinfo.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qlogging.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qflags.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qatomic.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qbasicatomic.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qatomic_bootstrap.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qgenericatomic.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qatomic_cxx11.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qglobalstatic.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qmutex.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qnumeric.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qversiontagging.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtgui-config.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qnamespace.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qrect.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qmargins.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsize.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qpoint.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qscopedpointer.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpixmap.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpaintdevice.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qwindowdefs.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qobjectdefs.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qobjectdefs_impl.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qwindowdefs_win.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qcolor.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qrgb.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstringlist.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qlist.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qalgorithms.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qiterator.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qrefcount.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qarraydata.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qhashfunctions.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstring.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qchar.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qbytearray.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstringliteral.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstringalgorithms.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstringview.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstringbuilder.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qpair.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qbytearraylist.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qregexp.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstringmatcher.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qrgba64.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsharedpointer.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qshareddata.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qhash.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsharedpointer_impl.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qobject.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qcoreevent.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qmetatype.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qvarlengtharray.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qcontainerfwd.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qobject_impl.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qimage.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpixelformat.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtransform.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qmatrix.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpolygon.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qvector.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qregion.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qdatastream.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qiodevice.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qline.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpainterpath.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtextoption.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpen.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qbrush.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qfontinfo.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qfont.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qfontmetrics.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/QGraphicsItem \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qgraphicsitem.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qtwidgets-config.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qvariant.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qmap.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qdebug.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtextstream.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qlocale.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qset.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qcontiguouscache.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/QGraphicsScene \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qgraphicsscene.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ball.o ../pacMan/ball.cpp
+
+ghost.o: ../pacMan/ghost.cpp ../pacMan/ghost.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/QPainter \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpainter.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtguiglobal.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qglobal.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qconfig-bootstrapped.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qconfig.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtcore-config.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsystemdetection.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qprocessordetection.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qcompilerdetection.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtypeinfo.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsysinfo.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qlogging.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qflags.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qatomic.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qbasicatomic.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qatomic_bootstrap.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qgenericatomic.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qatomic_cxx11.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qglobalstatic.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qmutex.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qnumeric.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qversiontagging.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtgui-config.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qnamespace.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qrect.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qmargins.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsize.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qpoint.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qscopedpointer.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpixmap.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpaintdevice.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qwindowdefs.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qobjectdefs.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qobjectdefs_impl.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qwindowdefs_win.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qcolor.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qrgb.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstringlist.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qlist.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qalgorithms.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qiterator.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qrefcount.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qarraydata.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qhashfunctions.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstring.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qchar.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qbytearray.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstringliteral.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstringalgorithms.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstringview.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstringbuilder.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qpair.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qbytearraylist.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qregexp.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstringmatcher.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qrgba64.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsharedpointer.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qshareddata.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qhash.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsharedpointer_impl.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qobject.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qcoreevent.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qmetatype.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qvarlengtharray.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qcontainerfwd.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qobject_impl.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qimage.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpixelformat.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtransform.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qmatrix.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpolygon.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qvector.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qregion.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qdatastream.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qiodevice.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qline.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpainterpath.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtextoption.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpen.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qbrush.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qfontinfo.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qfont.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qfontmetrics.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/QGraphicsItem \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qgraphicsitem.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qtwidgets-config.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qvariant.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qmap.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qdebug.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtextstream.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qlocale.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qset.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qcontiguouscache.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/QGraphicsScene \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qgraphicsscene.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ghost.o ../pacMan/ghost.cpp
+>>>>>>> master
 
 pacman.o: ../pacMan/pacman.cpp ../pacMan/pacman.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/QPainter \
@@ -3056,6 +3935,7 @@ pacmanboard.o: ../pacMan/pacmanboard.cpp ../pacMan/pacmanboard.h \
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o pacmanboard.o ../pacMan/pacmanboard.cpp
 
 pacmanwindow.o: ../pacMan/pacmanwindow.cpp ../pacMan/pacmanwindow.h \
+<<<<<<< HEAD
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/QDialog \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qdialog.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -3380,6 +4260,326 @@ pacmanwindow.o: ../pacMan/pacmanwindow.cpp ../pacMan/pacmanwindow.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtMultimedia/qtmultimedia-config.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtMultimedia/QSoundEffect \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtMultimedia/qsoundeffect.h \
+=======
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/QDialog \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qdialog.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtguiglobal.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qglobal.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qconfig-bootstrapped.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qconfig.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtcore-config.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsystemdetection.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qprocessordetection.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qcompilerdetection.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtypeinfo.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsysinfo.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qlogging.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qflags.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qatomic.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qbasicatomic.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qatomic_bootstrap.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qgenericatomic.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qatomic_cxx11.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qglobalstatic.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qmutex.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qnumeric.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qversiontagging.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtgui-config.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qtwidgets-config.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qwidget.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qwindowdefs.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qobjectdefs.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qnamespace.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qobjectdefs_impl.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qwindowdefs_win.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qobject.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstring.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qchar.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qbytearray.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qrefcount.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qarraydata.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstringliteral.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstringalgorithms.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstringview.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstringbuilder.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qlist.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qalgorithms.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qiterator.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qhashfunctions.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qpair.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qbytearraylist.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstringlist.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qregexp.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstringmatcher.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qcoreevent.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qscopedpointer.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qmetatype.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qvarlengtharray.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qcontainerfwd.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qobject_impl.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qmargins.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpaintdevice.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qrect.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsize.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qpoint.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpalette.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qcolor.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qrgb.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qrgba64.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qbrush.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qvector.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qmatrix.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpolygon.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qregion.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qdatastream.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qiodevice.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qline.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtransform.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpainterpath.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qimage.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpixelformat.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpixmap.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsharedpointer.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qshareddata.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qhash.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsharedpointer_impl.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qfont.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qfontmetrics.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qfontinfo.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qsizepolicy.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qcursor.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qkeysequence.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qevent.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qvariant.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qmap.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qdebug.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtextstream.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qlocale.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qset.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qcontiguouscache.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qurl.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qurlquery.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qfile.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qfiledevice.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qvector2d.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtouchdevice.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/QtCore \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/QtCoreDepends \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qabstractanimation.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qabstracteventdispatcher.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qeventloop.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qabstractitemmodel.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qabstractnativeeventfilter.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qabstractproxymodel.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qabstractstate.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qabstracttransition.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qanimationgroup.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qarraydataops.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qarraydatapointer.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qbasictimer.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qbitarray.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qbuffer.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qbytearraymatcher.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qcache.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qcollator.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qcommandlineoption.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qcommandlineparser.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qcoreapplication.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qcryptographichash.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qdatetime.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qdeadlinetimer.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qelapsedtimer.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qdir.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qfileinfo.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qdiriterator.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qeasingcurve.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qendian.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qeventtransition.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qexception.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qfactoryinterface.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qfileselector.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/QObject \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/QStringList \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qfilesystemwatcher.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qfinalstate.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qfuture.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qfutureinterface.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qrunnable.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qresultstore.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qfuturesynchronizer.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qfuturewatcher.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qhistorystate.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qidentityproxymodel.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qisenum.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qitemselectionmodel.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qjsonarray.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qjsonvalue.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qjsondocument.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qjsonobject.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qlibrary.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qlibraryinfo.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qversionnumber.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qlinkedlist.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qlockfile.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qloggingcategory.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qmath.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qmessageauthenticationcode.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qmetaobject.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qmimedata.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qmimedatabase.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qmimetype.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qobjectcleanuphandler.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qoperatingsystemversion.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qparallelanimationgroup.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qpauseanimation.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qplugin.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qpointer.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qpluginloader.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qprocess.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qpropertyanimation.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qvariantanimation.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qqueue.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qrandom.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qreadwritelock.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qregularexpression.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qresource.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsavefile.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qscopedvaluerollback.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsemaphore.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsequentialanimationgroup.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsettings.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsharedmemory.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsignalmapper.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsignaltransition.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsocketnotifier.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsortfilterproxymodel.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstack.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstandardpaths.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstate.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstatemachine.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstorageinfo.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qstringlistmodel.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qsystemsemaphore.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtemporarydir.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtemporaryfile.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtextboundaryfinder.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtextcodec.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qthread.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qthreadpool.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qthreadstorage.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtimeline.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtimer.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtimezone.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtranslator.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtypetraits.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/quuid.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qwaitcondition.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qwineventnotifier.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qxmlstream.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qtcoreversion.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/QtGui \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/QtGuiDepends \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtextlayout.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtextformat.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpen.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtextoption.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qglyphrun.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qrawfont.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qfontdatabase.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtextcursor.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtextdocument.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qaccessible.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qaccessiblebridge.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qaccessibleobject.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qaccessibleplugin.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qbackingstore.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qwindow.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/QEvent \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/QMargins \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/QRect \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qsurface.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qsurfaceformat.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qicon.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qbitmap.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qclipboard.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qdesktopservices.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qdrag.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qgenericmatrix.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qgenericplugin.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qgenericpluginfactory.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qguiapplication.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qinputmethod.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qiconengine.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qiconengineplugin.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qimageiohandler.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qimagereader.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qimagewriter.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qmatrix4x4.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qvector3d.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qvector4d.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qquaternion.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qmovie.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qoffscreensurface.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopengl.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/qt_windows.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopengles2ext.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopenglext.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopenglbuffer.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopenglcontext.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/QScopedPointer \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/QSurfaceFormat \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopenglversionfunctions.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopengldebug.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopenglextrafunctions.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopenglfunctions.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopenglframebufferobject.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopenglpaintdevice.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopenglpixeltransferoptions.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/QSharedDataPointer \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopenglshaderprogram.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopengltexture.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopengltextureblitter.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/QMatrix3x3 \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/QMatrix4x4 \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopengltimerquery.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopenglvertexarrayobject.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qopenglwindow.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/QPaintDeviceWindow \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpaintdevicewindow.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/QWindow \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/QPaintDevice \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/QOpenGLContext \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/QImage \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpagedpaintdevice.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpagelayout.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpagesize.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpaintengine.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpainter.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpdfwriter.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpicture.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpictureformatplugin.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qpixmapcache.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qrasterwindow.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qscreen.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/QList \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/QSize \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/QSizeF \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/QTransform \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qsessionmanager.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qstandarditemmodel.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qstatictext.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qstylehints.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qsyntaxhighlighter.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtextobject.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtextdocumentfragment.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtextdocumentwriter.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtextlist.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtexttable.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qvalidator.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/qtguiversion.h \
+>>>>>>> master
 		../pacMan/pacman.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtGui/QPainter \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/QGraphicsItem \
@@ -3395,6 +4595,7 @@ pacmanwindow.o: ../pacMan/pacmanwindow.cpp ../pacMan/pacmanwindow.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/QShortcut \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qshortcut.h \
 		ui_pacmanwindow.h \
+<<<<<<< HEAD
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtCore/QVariant \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/QApplication \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qapplication.h \
@@ -3533,6 +4734,146 @@ pacmanwindow.o: ../pacMan/pacmanwindow.cpp ../pacMan/pacmanwindow.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qtwidgetsversion.h \
 		../pacMan/options.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/QMessageBox
+=======
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/QVariant \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/QApplication \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qapplication.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qdesktopwidget.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/QGraphicsView \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qgraphicsview.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qscrollarea.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qframe.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/QLCDNumber \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qlcdnumber.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/QLabel \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qlabel.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/QPushButton \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qpushbutton.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/QVBoxLayout \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qboxlayout.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qlayout.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qgridlayout.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/QWidget \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/QThread \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/QtWidgets \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/QtWidgetsDepends \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qstyleoption.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qabstractspinbox.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qslider.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qabstractslider.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qstyle.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qtabbar.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qtabwidget.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qrubberband.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qaccessiblewidget.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qaction.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qactiongroup.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qbuttongroup.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qcalendarwidget.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qcheckbox.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qcolordialog.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qcolormap.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qcolumnview.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qcombobox.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qcommandlinkbutton.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qcommonstyle.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qcompleter.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qdatawidgetmapper.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qdatetimeedit.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qdial.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qdialogbuttonbox.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qdirmodel.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qfileiconprovider.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qdockwidget.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qdrawutil.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qerrormessage.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qfiledialog.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qfilesystemmodel.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qfocusframe.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qfontcombobox.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qfontdialog.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qformlayout.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/QLayout \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qgesture.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qgesturerecognizer.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qgraphicsanchorlayout.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qgraphicslayout.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qgraphicslayoutitem.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qgraphicseffect.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qgraphicsgridlayout.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qgraphicsitemanimation.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qgraphicslinearlayout.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qgraphicsproxywidget.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qgraphicswidget.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qgraphicssceneevent.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qgraphicstransform.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtGui/QVector3D \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qgroupbox.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qheaderview.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qinputdialog.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qlineedit.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qitemdelegate.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qitemeditorfactory.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qkeyeventtransition.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qkeysequenceedit.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qlistview.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qlistwidget.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qmainwindow.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qmdiarea.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qmdisubwindow.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qmenu.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qmenubar.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qmessagebox.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qmouseeventtransition.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qopenglwidget.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qtextedit.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qprogressbar.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qprogressdialog.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qproxystyle.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/QCommonStyle \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qradiobutton.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qscrollbar.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qscroller.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/QPointF \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/QScrollerProperties \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qscrollerproperties.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtCore/QMetaType \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qsizegrip.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qspinbox.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qsplashscreen.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qsplitter.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qstackedlayout.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qstackedwidget.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qstatusbar.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qstyleditemdelegate.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qstylefactory.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qstylepainter.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qstyleplugin.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qsystemtrayicon.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qtableview.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qtablewidget.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qtextbrowser.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qtoolbar.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qtoolbox.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qtoolbutton.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qtooltip.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qtreeview.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qtreewidget.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qtreewidgetitemiterator.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qundogroup.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qundostack.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qundoview.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qwhatsthis.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qwidgetaction.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qwizard.h \
+		/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/include/QtWidgets/qtwidgetsversion.h
+>>>>>>> master
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o pacmanwindow.o ../pacMan/pacmanwindow.cpp
 
 powerball.o: ../pacMan/powerball.cpp ../pacMan/powerball.h \
@@ -3734,21 +5075,6 @@ textdrawing.o: ../pacMan/textdrawing.cpp ../pacMan/textdrawing.h \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/QGraphicsScene \
 		../../../../Qt5.11.0/5.11.0/gcc_64/include/QtWidgets/qgraphicsscene.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o textdrawing.o ../pacMan/textdrawing.cpp
-
-qrc_Resources.o: qrc_Resources.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qrc_Resources.o qrc_Resources.cpp
-
-qrc_Images.o: qrc_Images.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qrc_Images.o qrc_Images.cpp
-
-qrc_Sounds.o: qrc_Sounds.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qrc_Sounds.o qrc_Sounds.cpp
-
-moc_menu.o: moc_menu.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_menu.o moc_menu.cpp
-
-moc_options.o: moc_options.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_options.o moc_options.cpp
 
 moc_pacmanwindow.o: moc_pacmanwindow.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_pacmanwindow.o moc_pacmanwindow.cpp

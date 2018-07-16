@@ -7,7 +7,7 @@ Ghost::Ghost() {
     gosy = 480 / 2;
 
     direction = 1;
-    is_Scared = false;
+    isScared = false;
     whiteb = false;
 
     //Loads ghosts images.
@@ -32,7 +32,7 @@ QRectF Ghost::boundingRect() const {
 
 void Ghost::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) {
     painter->setOpacity(0.5); // makes the ghosts actually look like ghosts
-    if (!is_Scared) {
+    if (!isScared) {
         switch (direction) {
             case 1:
                 if (animestate == 0) {

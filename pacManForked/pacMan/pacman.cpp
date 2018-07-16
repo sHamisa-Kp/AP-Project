@@ -102,7 +102,3 @@ void Pacman::setDirection(int dir) {
     direction = dir;
 }
 
-void Pacman::setDeath(int d) {
-    death=d;
-}
-

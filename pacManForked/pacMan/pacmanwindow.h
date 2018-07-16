@@ -1,12 +1,9 @@
 #ifndef PACMANWINDOW_H
 #define PACMANWINDOW_H
 
-
 #include <QDialog>
 #include <QtCore>
 #include <QtGui>
-#include <QSound>
-#include <QSoundEffect>
 #include "pacman.h"
 #include "pacmanboard.h"
 #include "ball.h"
@@ -55,39 +52,33 @@ public:
     Ball *ball;
     PowerBall *powerball;
     TextDrawing *text;
-    QString name, difficultyText; // the text used for the name and difficulty on last screen
+    QString difficultyText; // the text used for the name and difficulty on last screen
 
     int pacX, pacY, direction, nextDirection;
     int ghostX[4], ghostY[4], ghostDir[4], nextGhostDir[4];
 
     bool moving, ghostMoving[4];
     bool scared;
-    int score, hiscore, state, lives, level, difficulty;
-    int starting;
-    bool start;
+    int score, state, lives;
+    bool start; // the ghosts gate is now open
     bool ghostStart[4]; // a bool that helps the ghosts escape rectangle
-    bool playing;
+    bool playing; // means a game is running
     bool isPaused;
+
+    unsigned int paintTimeout = 70;
+    unsigned int pacManTimeout = 70;
+    unsigned int ghostTimeOut = pacManTimeout;
 
     QVector <QPoint> ballPoints; // this allows to set the location on screen
     QVector <QPoint> PowerballPoints;
-    QSound *waka; // calling class sound to produce sound
     ~Pacmanwindow();
 
 public slots:
     void updater();
-
     void ghostUpdater();
 
 protected:
     void keyPressEvent(QKeyEvent *event);
-
-private slots:
-    int timeoutTime() { return 1000 / (2); }
-
-    void on_pauseButton_clicked();
-
-    void on_controlsButton_clicked();
 
 private:
     Ui::Pacmanwindow *ui;

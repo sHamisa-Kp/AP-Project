@@ -22,7 +22,6 @@ public:
     void setDirection(int dir);
 
     void setColor(QString col);
-    void changeGeometry() { prepareGeometryChange(); }
 
     QPixmap left1, left2;
     QPixmap up1, up2;
@@ -33,7 +32,7 @@ public:
     int gosx, gosy;
     int direction;
     int animestate;
-    bool is_Scared, whiteb;
+    bool isScared, whiteb;
 };
 
 #endif // GHOST_H
