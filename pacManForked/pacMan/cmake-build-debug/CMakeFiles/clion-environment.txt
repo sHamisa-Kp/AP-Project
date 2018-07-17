@@ -1,3 +1,0 @@
-Options: 
-
-Options:-DCMAKE_PREFIX_PATH=/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/lib/cmake

@@ -27,8 +27,6 @@ public:
     QLabel *label_7;
     QLCDNumber *scoreLcdNumber_2;
     QLabel *scoreLabel;
-    QLCDNumber *highScroreLcdNumber_2;
-    QLabel *label_6;
     QLCDNumber *timeLcdNumber_2;
 
     void setupUi(QDialog *Pacmanwindow)
@@ -66,7 +64,7 @@ public:
         graphicsView->setBackgroundBrush(brush1);
         label_8 = new QLabel(Pacmanwindow);
         label_8->setObjectName(QStringLiteral("label_8"));
-        label_8->setGeometry(QRect(0, 410, 139, 37));
+        label_8->setGeometry(QRect(0, 340, 139, 37));
         QPalette palette1;
         palette1.setBrush(QPalette::Active, QPalette::WindowText, brush);
         palette1.setBrush(QPalette::Inactive, QPalette::WindowText, brush);
@@ -82,12 +80,12 @@ public:
         label_8->setAlignment(Qt::AlignCenter);
         livesLcdNumber_2 = new QLCDNumber(Pacmanwindow);
         livesLcdNumber_2->setObjectName(QStringLiteral("livesLcdNumber_2"));
-        livesLcdNumber_2->setGeometry(QRect(10, 360, 139, 36));
+        livesLcdNumber_2->setGeometry(QRect(10, 240, 139, 36));
         livesLcdNumber_2->setFrameShape(QFrame::NoFrame);
         livesLcdNumber_2->setSegmentStyle(QLCDNumber::Outline);
         label_7 = new QLabel(Pacmanwindow);
         label_7->setObjectName(QStringLiteral("label_7"));
-        label_7->setGeometry(QRect(0, 300, 139, 79));
+        label_7->setGeometry(QRect(0, 180, 139, 79));
         QPalette palette2;
         palette2.setBrush(QPalette::Active, QPalette::WindowText, brush);
         palette2.setBrush(QPalette::Inactive, QPalette::WindowText, brush);
@@ -97,14 +95,14 @@ public:
         label_7->setAlignment(Qt::AlignCenter);
         scoreLcdNumber_2 = new QLCDNumber(Pacmanwindow);
         scoreLcdNumber_2->setObjectName(QStringLiteral("scoreLcdNumber_2"));
-        scoreLcdNumber_2->setGeometry(QRect(10, 270, 139, 36));
+        scoreLcdNumber_2->setGeometry(QRect(10, 90, 139, 36));
         scoreLcdNumber_2->setFrameShape(QFrame::NoFrame);
         scoreLcdNumber_2->setSmallDecimalPoint(false);
         scoreLcdNumber_2->setDigitCount(5);
         scoreLcdNumber_2->setSegmentStyle(QLCDNumber::Outline);
         scoreLabel = new QLabel(Pacmanwindow);
         scoreLabel->setObjectName(QStringLiteral("scoreLabel"));
-        scoreLabel->setGeometry(QRect(0, 210, 139, 79));
+        scoreLabel->setGeometry(QRect(0, 30, 139, 79));
         QPalette palette3;
         palette3.setBrush(QPalette::Active, QPalette::WindowText, brush);
         palette3.setBrush(QPalette::Inactive, QPalette::WindowText, brush);
@@ -113,33 +111,9 @@ public:
         scoreLabel->setFont(font);
         scoreLabel->setLineWidth(0);
         scoreLabel->setAlignment(Qt::AlignCenter);
-        highScroreLcdNumber_2 = new QLCDNumber(Pacmanwindow);
-        highScroreLcdNumber_2->setObjectName(QStringLiteral("highScroreLcdNumber_2"));
-        highScroreLcdNumber_2->setGeometry(QRect(10, 180, 139, 36));
-        highScroreLcdNumber_2->setFrameShape(QFrame::NoFrame);
-        highScroreLcdNumber_2->setFrameShadow(QFrame::Plain);
-        highScroreLcdNumber_2->setDigitCount(5);
-        highScroreLcdNumber_2->setSegmentStyle(QLCDNumber::Outline);
-        label_6 = new QLabel(Pacmanwindow);
-        label_6->setObjectName(QStringLiteral("label_6"));
-        label_6->setGeometry(QRect(0, 120, 139, 79));
-        QPalette palette4;
-        palette4.setBrush(QPalette::Active, QPalette::WindowText, brush);
-        palette4.setBrush(QPalette::Inactive, QPalette::WindowText, brush);
-        palette4.setBrush(QPalette::Disabled, QPalette::WindowText, brush2);
-        label_6->setPalette(palette4);
-        QFont font1;
-        font1.setPointSize(14);
-        font1.setBold(true);
-        font1.setItalic(false);
-        font1.setUnderline(false);
-        font1.setWeight(75);
-        label_6->setFont(font1);
-        label_6->setTextFormat(Qt::AutoText);
-        label_6->setAlignment(Qt::AlignCenter);
         timeLcdNumber_2 = new QLCDNumber(Pacmanwindow);
         timeLcdNumber_2->setObjectName(QStringLiteral("timeLcdNumber_2"));
-        timeLcdNumber_2->setGeometry(QRect(10, 450, 139, 36));
+        timeLcdNumber_2->setGeometry(QRect(10, 380, 139, 36));
         timeLcdNumber_2->setFrameShape(QFrame::NoFrame);
         timeLcdNumber_2->setSmallDecimalPoint(false);
         timeLcdNumber_2->setDigitCount(5);
@@ -152,7 +126,14 @@ public:
 
     void retranslateUi(QDialog *Pacmanwindow)
     {
-        label_8->setText(QApplication::translate("Pacmanwindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; font-weight:400;\">Time</span></p></body></html>", nullptr));
+#ifndef QT_NO_TOOLTIP
+        label_8->setToolTip(QApplication::translate("Pacmanwindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Ubuntu'; font-size:14pt; font-weight:600; font-style:normal;\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>", nullptr));
+#endif // QT_NO_TOOLTIP
+        label_8->setText(QApplication::translate("Pacmanwindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:16pt;\">Time</span></p></body></html>", nullptr));
 #ifndef QT_NO_TOOLTIP
         label_7->setToolTip(QApplication::translate("Pacmanwindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
@@ -160,12 +141,19 @@ public:
 "</style></head><body style=\" font-family:'Ubuntu'; font-size:14pt; font-weight:600; font-style:normal;\">\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>", nullptr));
 #endif // QT_NO_TOOLTIP
-        label_7->setText(QApplication::translate("Pacmanwindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; color:#2e3436;\">Lives</span></p></body></html>", nullptr));
+        label_7->setText(QApplication::translate("Pacmanwindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Ubuntu'; font-size:14pt; font-weight:600; font-style:normal;\">\n"
+"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:16pt; color:#ffffff;\">Lives</span></p></body></html>", nullptr));
 #ifndef QT_NO_TOOLTIP
-        scoreLabel->setToolTip(QApplication::translate("Pacmanwindow", "<html><head/><body><p>shamisa</p></body></html>", nullptr));
+        scoreLabel->setToolTip(QApplication::translate("Pacmanwindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Ubuntu'; font-size:14pt; font-weight:600; font-style:normal;\">\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">shamisa</p></body></html>", nullptr));
 #endif // QT_NO_TOOLTIP
-        scoreLabel->setText(QApplication::translate("Pacmanwindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; color:#2e3436;\">Score</span></p></body></html>", nullptr));
-        label_6->setText(QApplication::translate("Pacmanwindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; font-weight:400;\">HighScore</span></p></body></html>", nullptr));
+        scoreLabel->setText(QApplication::translate("Pacmanwindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:16pt; color:#ffffff;\">Score</span></p></body></html>", nullptr));
         Q_UNUSED(Pacmanwindow);
     } // retranslateUi
 

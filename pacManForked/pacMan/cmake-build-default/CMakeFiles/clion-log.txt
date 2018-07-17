@@ -1,4 +1,0 @@
-/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/clion-2017.3.4/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE= -DCMAKE_PREFIX_PATH=/media/divar/01D0EA3EF660B7F0/UBUNTUFiles/ToOLs/Qt/5.11.0/gcc_64/lib/cmake -G "CodeBlocks - Unix Makefiles" /home/divar/Desktop/AP/AP-Project/pacManForked/pacMan
--- Configuring done
--- Generating done
--- Build files have been written to: /home/divar/Desktop/AP/AP-Project/pacManForked/pacMan/cmake-build-default

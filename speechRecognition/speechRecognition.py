@@ -26,7 +26,7 @@ import wave
 import math
 import audioop
 import os
-from numba import jit
+# from numba import jit
 
 """ Recording Specs """
 FORMAT = pyaudio.paInt16
@@ -45,17 +45,14 @@ def py_error_handler(filename, line, function, err, fmt):
     pass
 
 
-def measureAudioIntensity(num_samples=50):
+def measureAudioIntensity():
     p = pyaudio.PyAudio()
 
     stream = p.open(format=FORMAT, channels=CHANNELS, rate=RATE, input=True, frames_per_buffer=CHUNK)
-    cur_data = stream.read(CHUNK)
+    recData = stream.read(CHUNK)
 
-    values = [math.sqrt(abs(audioop.avg(cur_data, 4))) for i in range(num_samples)]
-    # print(len(values))
-    values = sorted(values, reverse=True)
-
-    r = sum(values[:int(num_samples * 0.2)]) / int(num_samples * 0.2)  # Average of 20% largest
+    r = math.sqrt(abs(audioop.avg(recData, 4)))
+    # print("r: {}" .format(r))
 
     stream.close()
     p.terminate()
@@ -149,22 +146,22 @@ def label_wav(wav, labels, graph, input_name, output_name, how_many_labels):
     prev_data2 = []
     prev_data3 = []
     prev_data4 = []
-    # INTENSITY = noiseIntensityAverage * 2.3
-    INTENSITY = 2100
+    INTENSITY = noiseIntensityAverage * 2.3
+    #INTENSITY = 2100
     print("INTENSITY: {}".format(INTENSITY))
     print("TimeElapsed: {}".format(time.time() - startTime))
     print("Ready!\n\n")
     while True:
         stream = p.open(format=FORMAT, channels=CHANNELS, rate=RATE, input=True, frames_per_buffer=CHUNK)
-        cur_data = stream.read(CHUNK)
-        values = [math.sqrt(abs(audioop.avg(cur_data, 4))) for i in range(num_samples)]
-        values = sorted(values, reverse=True)
-        r = sum(values[:int(num_samples * 0.2)]) / int(num_samples * 0.2)
+        recData = stream.read(CHUNK)
+        # print("recData: {}".format(recData))
+        r = math.sqrt(abs(audioop.avg(recData, 4)))
+        # print("r: {}".format(r))
 
         if r > INTENSITY:
             print(' recording... Average audio intensity is r', r)
             # t0 = time.time()
-            frames = [prev_data0, prev_data1, prev_data2, prev_data3, prev_data4, cur_data]
+            frames = [prev_data0, prev_data1, prev_data2, prev_data3, prev_data4, recData]
             for i in range(0, int(RATE / CHUNK * RECORD_SECONDS)):
                 frames.append(stream.read(CHUNK))
             # print(time.time() - t0)
@@ -185,7 +182,7 @@ def label_wav(wav, labels, graph, input_name, output_name, how_many_labels):
         prev_data1 = prev_data2
         prev_data2 = prev_data3
         prev_data3 = prev_data4
-        prev_data4 = cur_data
+        prev_data4 = recData
         stream.stop_stream()
         stream.close()
     p.terminate()
