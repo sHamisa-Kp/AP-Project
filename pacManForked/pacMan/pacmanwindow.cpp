@@ -17,8 +17,8 @@ Pacmanwindow::Pacmanwindow(QWidget *parent) :
     scene->setSceneRect(0, 0, 640, 480);
     ui->graphicsView->setSceneRect(scene->sceneRect());
     //Used to exit the application
-    connect(ui->exitButton, SIGNAL(clicked()), qApp, SLOT(closeAllWindows()));
-    ui->exitButton->setShortcut(QKeySequence("Escape"));
+//    connect(ui->exitButton, SIGNAL(clicked()), qApp, SLOT(closeAllWindows()));
+//    ui->exitButton->setShortcut(QKeySequence("Escape"));
 
     text = new TextDrawing;
     text->over = false;
