@@ -40,11 +40,6 @@ public:
 
     void retry();
 
-    void easy();
-
-
-    void parseMessage(QString dataIn, int);
-
     Pacman *pacman;
     Ghost *ghost[4];
 
@@ -52,7 +47,6 @@ public:
     Ball *ball;
     PowerBall *powerball;
     TextDrawing *text;
-    QString difficultyText; // the text used for the name and difficulty on last screen
 
     int pacX, pacY, direction, nextDirection;
     int ghostX[4], ghostY[4], ghostDir[4], nextGhostDir[4];
@@ -66,7 +60,7 @@ public:
     bool isPaused;
 
     unsigned int paintTimeout = 70;
-    unsigned int pacManTimeout = 200;
+    unsigned int pacManTimeout = 70;
     unsigned int ghostTimeOut = pacManTimeout;
 
     QVector <QPoint> ballPoints; // this allows to set the location on screen

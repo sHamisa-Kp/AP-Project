@@ -37,11 +37,10 @@ void TextDrawing::paint(QPainter *painter, const QStyleOptionGraphicsItem *optio
             painter->drawText(x, y - 100, "GAME OVER");
 
         } else {
-
+            painter->setPen(Qt::red);
             painter->drawText(boundingRect(), Qt::AlignCenter, "SAY GO TO START");
             font.setPointSize(32);
-            QPen pen(Qt::yellow);
-            painter->setPen(pen);
+            painter->setPen(Qt::yellow);
             painter->setFont(font);
             painter->drawText(x + 100, y - 180, "Pac Man");
         }

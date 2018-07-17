@@ -10,15 +10,7 @@ Ghost::Ghost() {
     isScared = false;
     whiteb = false;
 
-    //Loads ghosts images.
-    right1.load(":/images/ghostright1.png");
-    right2.load(":/images/ghostright2.png");
-    up1.load(":/images/ghostup1.png");
-    up2.load(":/images/ghostup2.png");
-    down1.load(":/images/ghostdown1.png");
-    down2.load(":/images/ghostdown2.png");
-    left1.load(":/images/ghostleft1.png");
-    left2.load(":/images/ghostleft2.png");
+    pic.load(":/images/pinky.svg");
     scareb.load(":/images/ghostscaredblue1.svg");
     scareb1.load(":/images/ghostscaredblue2.svg");
     scarew.load(":/images/ghostscaredwhite1.svg");
@@ -31,35 +23,35 @@ QRectF Ghost::boundingRect() const {
 }
 
 void Ghost::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) {
-    painter->setOpacity(0.5); // makes the ghosts actually look like ghosts
+    painter->setOpacity(1); // makes the ghosts actually look like ghosts
     if (!isScared) {
         switch (direction) {
             case 1:
                 if (animestate == 0) {
-                    painter->drawPixmap(gosx - 15, gosy - 15, 30, 30, left1);
+                    painter->drawPixmap(gosx - 15, gosy - 15, 30, 30, pic);
                 } else {
-                    painter->drawPixmap(gosx - 15, gosy - 15, 30, 30, left2);
+                    painter->drawPixmap(gosx - 15, gosy - 15, 30, 30, pic);
                 }
                 break;
             case 4:
                 if (animestate == 0) {
-                    painter->drawPixmap(gosx - 15, gosy - 15, 30, 30, right1);
+                    painter->drawPixmap(gosx - 15, gosy - 15, 30, 30, pic);
                 } else {
-                    painter->drawPixmap(gosx - 15, gosy - 15, 30, 30, right2);
+                    painter->drawPixmap(gosx - 15, gosy - 15, 30, 30, pic);
                 }
                 break;
             case 3:
                 if (animestate == 0) {
-                    painter->drawPixmap(gosx - 15, gosy - 15, 30, 30, down1);
+                    painter->drawPixmap(gosx - 15, gosy - 15, 30, 30, pic);
                 } else {
-                    painter->drawPixmap(gosx - 15, gosy - 15, 30, 30, down2);
+                    painter->drawPixmap(gosx - 15, gosy - 15, 30, 30, pic);
                 }
                 break;
             case 2:
                 if (animestate == 0) {
-                    painter->drawPixmap(gosx - 15, gosy - 15, 30, 30, up1);
+                    painter->drawPixmap(gosx - 15, gosy - 15, 30, 30, pic);
                 } else {
-                    painter->drawPixmap(gosx - 15, gosy - 15, 30, 30, up2);
+                    painter->drawPixmap(gosx - 15, gosy - 15, 30, 30, pic);
                 }
                 break;
         }
@@ -104,31 +96,10 @@ void Ghost::setDirection(int dir) {
 
 void Ghost::setColor(QString col) { // Because each ghost is different colours they need to be called differently
     if (col == "blue") {
-        right1.load(":/images/ghostrightblue1.png");
-        right2.load(":/images/ghostrightblue2.png");
-        up1.load(":/images/ghostupblue1.png");
-        up2.load(":/images/ghostupblue2.png");
-        down1.load(":/images/ghostdownblue1.png");
-        down2.load(":/images/ghostdownblue2.png");
-        left1.load(":/images/ghostleftblue1.png");
-        left2.load(":/images/ghostleftblue2.png");
+        pic.load(":/images/inky.svg");
     } else if (col == "orange") {
-        right1.load(":/images/ghostrightorange1.png");
-        right2.load(":/images/ghostrightorange2.png");
-        up1.load(":/images/ghostuporange1.png");
-        up2.load(":/images/ghostuporange2.png");
-        down1.load(":/images/ghostdownorange1.png");
-        down2.load(":/images/ghostdownorange2.png");
-        left1.load(":/images/ghostleftorange1.png");
-        left2.load(":/images/ghostleftorange2.png");
+        pic.load(":/images/clyde.svg");
     } else if (col == "red") {
-        right1.load(":/images/ghostrightred1.png");
-        right2.load(":/images/ghostrightred2.png");
-        up1.load(":/images/ghostupred1.png");
-        up2.load(":/images/ghostupred2.png");
-        down1.load(":/images/ghostdownred1.png");
-        down2.load(":/images/ghostdownred2.png");
-        left1.load(":/images/ghostleftred1.png");
-        left2.load(":/images/ghostleftred2.png");
+        pic.load(":/images/blinky.svg");
     }
 }

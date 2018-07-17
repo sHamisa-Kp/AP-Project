@@ -4,10 +4,10 @@ Pacman::Pacman() {
     animestate = 0;
     pacx = 200;
     pacy = 360;
-    x = 10;
-    y = 10;
-    height = 35;
-    width = 35;
+    x = 18;
+    y = 18;
+    height = 36;
+    width = 36;
     direction = 4; //default direction of pacman
 
     right1.load(":/images/pacroundright.png");

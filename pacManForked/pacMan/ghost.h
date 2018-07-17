@@ -23,10 +23,7 @@ public:
 
     void setColor(QString col);
 
-    QPixmap left1, left2;
-    QPixmap up1, up2;
-    QPixmap down1, down2;
-    QPixmap right1, right2;
+    QPixmap pic;
     QPixmap scareb, scareb1, scarew, scarew1;
 
     int gosx, gosy;

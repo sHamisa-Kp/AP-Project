@@ -18,7 +18,6 @@ Pacmanwindow::Pacmanwindow(QWidget *parent) :
     ui->graphicsView->setSceneRect(scene->sceneRect());
     //Used to exit the application
 //    connect(ui->exitButton, SIGNAL(clicked()), qApp, SLOT(closeAllWindows()));
-//    ui->exitButton->setShortcut(QKeySequence("Escape"));
 
     text = new TextDrawing;
     text->over = false;
@@ -37,7 +36,7 @@ void Pacmanwindow::startGame() {
     ghostY[2] = 480 / 2;
     ghostX[3] = 450 / 2;
     ghostY[3] = 480 / 2;
-    pacX = 400 / 2;
+    pacX = 200;
     pacY = 360;
 
     pacman = new Pacman;
@@ -107,11 +106,14 @@ void Pacmanwindow::endGame() {
     scene->removeItem(ghost[2]);
     scene->removeItem(ghost[3]);
     scene->removeItem(pacmanBoard);
-    scene->update();
+
     text->over = true;
     text->playing = false;
     start = false;
     playing = false;
+    this->show();
+    scene->update();
+    this->update();
 }
 
 // This code is used when one of the livess are taken.
@@ -390,10 +392,10 @@ void Pacmanwindow::ghostsMove(int i) {
             break;
     }
 
-    if (ghostX[i]<= 0) {
+    if (ghostX[i]== 0) {
         ghostX[i]= 450;
         ghostY[i]= 230;
-    } else if (ghostX[i]>= 450) {
+    } else if (ghostX[i]== 450) {
         ghostX[i]= 0;
         ghostY[i]= 230;
     }
@@ -451,6 +453,7 @@ void Pacmanwindow::checkLost() // lost the game
             else {
 //                std::cout << "I am not scared" << std::endl;
                 scared = false;
+                //FOR
                 ghost[0]->isScared = false;
                 ghost[1]->isScared = false;
                 ghost[2]->isScared = false;
@@ -462,6 +465,7 @@ void Pacmanwindow::checkLost() // lost the game
                 if (lives > 0) {
                     lives -= 1;
                     retry();
+                    break;
                 } else {
                     scene->addItem(text);
                     endGame();
@@ -524,6 +528,10 @@ void Pacmanwindow::keyPressEvent(QKeyEvent *event) {
                 pause();
                 break;
 
+            case Qt::Key_Escape:
+                this->close();
+
+                break;
             default:
                 break;
         }
@@ -534,8 +542,7 @@ void Pacmanwindow::keyPressEvent(QKeyEvent *event) {
 // This updates the pacman with the use of timer connection
 void Pacmanwindow::updater() {
     static int scarestate = 0;
-    static int timeGame = 0;
-    static long counter = 0; // recognize when to update pacman
+    static int counter = 0; // recognize when to update pacman
     counter++;
 
     // This will display the lives and level
@@ -550,7 +557,6 @@ void Pacmanwindow::updater() {
         if (pacman->pacx == ballPoints[i].x() && pacman->pacy == ballPoints[i].y()) {
             ballPoints.remove(i);
             score++;
-            text->score = score;
             ui->scoreLcdNumber_2->display(score);
         }
     }
@@ -584,21 +590,16 @@ void Pacmanwindow::updater() {
             ghost[1]->whiteb = false;
             ghost[2]->whiteb = false;
             ghost[3]->whiteb = false;
+            ghost[0]->isScared = false;
+            ghost[1]->isScared = false;
+            ghost[2]->isScared = false;
+            ghost[3]->isScared = false;
         }
-    } else {
-        ghost[0]->isScared = false;
-        ghost[1]->isScared = false;
-        ghost[2]->isScared = false;
-        ghost[3]->isScared = false;
     }
 
     // This takes the time and divdes it by 30 to give the best representitive of seconds.
-    if (timeGame > -1) {
-        timeGame++;
-        ui->timeLcdNumber_2->display(timeGame / 3);
-    }
-
-    text->timeElapsed = timeGame / 3;
+    ui->timeLcdNumber_2->display(counter / 8);
+    
 
     ball->setpoints(ballPoints);
     powerball->setpoints(PowerballPoints);
@@ -611,11 +612,11 @@ void Pacmanwindow::updater() {
     ghost[1]->advance();
     ghost[2]->advance();
     ghost[3]->advance();
+    pacman->advance();
 
     this->setFocus();
     scene->update(pacmanBoard->boundingRect());
 
-    pacman->advance();
 }
 
 // This pauses the timer.
