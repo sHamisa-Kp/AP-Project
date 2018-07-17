@@ -1,23 +1,5 @@
 <RCC>
     <qresource prefix="/">
-<<<<<<< HEAD
-        <file>images/37562690-pacman-wallpaper.jpg</file>
-        <file>images/colors-lines-black-colors-red.jpg</file>
-        <file>images/die1.png</file>
-        <file>images/die2.png</file>
-        <file>images/die4.png</file>
-        <file>images/die5.png</file>
-        <file>images/die6.png</file>
-        <file>images/die7.png</file>
-        <file>images/die8.png</file>
-        <file>images/die9.png</file>
-        <file>images/dot.png</file>
-=======
-<<<<<<< HEAD
-        <file>images/pacup1.png</file>
-        <file>images/pacround.png</file>
-=======
->>>>>>> master
         <file>images/ghostdown1.png</file>
         <file>images/ghostdown2.png</file>
         <file>images/ghostdownblue1.png</file>
@@ -43,13 +25,10 @@
         <file>images/ghostrightred1.png</file>
         <file>images/ghostrightred2.png</file>
         <file>images/ghostscaredblue1.png</file>
-        <file>images/ghostscaredblue1.svg</file>
         <file>images/ghostscaredblue2.png</file>
-        <file>images/ghostscaredblue2.svg</file>
         <file>images/ghostscaredwhite1.png</file>
-        <file>images/ghostscaredwhite1.svg</file>
         <file>images/ghostscaredwhite2.png</file>
-        <file>images/ghostscaredwhite2.svg</file>
+        <file>images/GhostSprites.png</file>
         <file>images/ghostup1.png</file>
         <file>images/ghostup2.png</file>
         <file>images/ghostupblue1.png</file>
@@ -58,23 +37,27 @@
         <file>images/ghostuporange2.png</file>
         <file>images/ghostupred1.png</file>
         <file>images/ghostupred2.png</file>
+        <file>images/dot.png</file>
+        <file>images/pac_map_old.png</file>
+        <file>images/pacround.png</file>
+        <file>images/pacright1.png</file>
+        <file>images/pacright2.png</file>
+        <file>images/pacup1.png</file>
+        <file>images/pacup2.png</file>
         <file>images/pacdown1.png</file>
         <file>images/pacdown2.png</file>
         <file>images/pacleft1.png</file>
         <file>images/pacleft2.png</file>
-        <file>images/pac_map_old.png</file>
-        <file>images/pacright1.png</file>
->>>>>>> master
-        <file>images/pacright2.png</file>
-        <file>images/pacrounddown.png</file>
-        <file>images/pacroundleft.png</file>
-        <file>images/pacroundright.png</file>
-        <file>images/pacroundup.png</file>
-        <file>images/pacup1.png</file>
-        <file>images/pacup2.png</file>
-        <file>images/blinky.svg</file>
-        <file>images/clyde.svg</file>
-        <file>images/inky.svg</file>
-        <file>images/pinky.svg</file>
+        <file>images/pac_map.png</file>
+        <file>images/paclogo.png</file>
+        <file>images/die1.png</file>
+        <file>images/die2.png</file>
+        <file>images/die3.png</file>
+        <file>images/die4.png</file>
+        <file>images/die5.png</file>
+        <file>images/die6.png</file>
+        <file>images/die7.png</file>
+        <file>images/die8.png</file>
+        <file>images/die9.png</file>
     </qresource>
 </RCC>
