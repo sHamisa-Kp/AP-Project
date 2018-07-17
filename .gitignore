@@ -4,3 +4,5 @@
 **/cmake-build-debug
 **/cmake-build-default
 *.o
+**/buildDirectory
+**/build-pacMan-Desktop_Qt_5_11_0_GCC_64bit-Debug
