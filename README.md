@@ -2,15 +2,15 @@
 
 This is a project for Advanced Programming Course at [Amirkabir University of Technology](http://aut.ac.ir/aut/).
 It's a Pac-Man Game written in Python and C++. You can control the game by saying (GO, STOP, UP, DOWN, LEFT, RIGHT, OFF).
-It's based on [tensorflow](https://www.tensorflow.org/tutorials/sequences/audio_recognition), [this](http://www.kiranjose.in/blogs/getting-tensorflow-1-4-on-raspberrypi-3/), [this](https://github.com/Uberi/speech_recognition) and [this](https://github.com/TomAtterton/Pacman-QT-Game)
+It's based on [tensorflow](https://www.tensorflow.org/tutorials/sequences/audio_recognition), [this](http://www.kiranjose.in/blogs/getting-tensorflow-1-4-on-raspberrypi-3/), [this](https://github.com/Uberi/speech_recognition) and [this](https://github.com/TomAtterton/Pacman-QT-Game).
 
 ### Prerequisites
 
-* Qt (if you want to compile the game yorself)
+* Qt (if you want to compile the game yuorself)
 * Anaconda
 * Tensorflow
-* pyautogui
-* pyaudio
+* PyAutoGui
+* PyAudio
 
 ### How to Run The Game
 
