@@ -6,3 +6,4 @@
 *.o
 **/buildDirectory
 **/build-pacMan-Desktop_Qt_5_11_0_GCC_64bit-Debug
+**/build-pacMan-Desktop_Qt_5_11_0_GCC_64bit-Release

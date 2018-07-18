@@ -1,3 +1,4 @@
+
 #include "pacmanwindow.h"
 #include "ui_pacmanwindow.h"
 #include <QThread>

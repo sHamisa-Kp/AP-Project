@@ -26,6 +26,7 @@ import wave
 import math
 import audioop
 import os
+
 # from numba import jit
 
 """ Recording Specs """
@@ -40,7 +41,6 @@ num_samples = 50
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 
-# from tensorflow.contrib.framework.python.ops import audio_ops as contrib_audio
 def py_error_handler(filename, line, function, err, fmt):
     pass
 
@@ -146,8 +146,8 @@ def label_wav(wav, labels, graph, input_name, output_name, how_many_labels):
     prev_data2 = []
     prev_data3 = []
     prev_data4 = []
-    INTENSITY = noiseIntensityAverage * 2.3
-    #INTENSITY = 2100
+    INTENSITY = noiseIntensityAverage * 1.5
+    # INTENSITY = 2100
     print("INTENSITY: {}".format(INTENSITY))
     print("TimeElapsed: {}".format(time.time() - startTime))
     print("Ready!\n\n")

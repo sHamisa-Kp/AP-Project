@@ -12,7 +12,7 @@ class PacManGame(threading.Thread):
 
     def run(self):
         p = subprocess.call('../pacManForked/'
-                            'build-pacMan-Desktop_Qt_5_11_0_GCC_64bit-Debug/pacMan', shell=True)
+                            'build-pacMan-Desktop_Qt_5_11_0_GCC_64bit-Release/pacMan', shell=True)
 
 
 class SpeechRecognition(threading.Thread):

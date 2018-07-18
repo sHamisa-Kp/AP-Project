@@ -60,7 +60,7 @@ public:
     bool isPaused;
 
     unsigned int paintTimeout = 70;
-    unsigned int pacManTimeout = 70;
+    unsigned int pacManTimeout = 140;
     unsigned int ghostTimeOut = pacManTimeout;
 
     QVector <QPoint> ballPoints; // this allows to set the location on screen
