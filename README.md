@@ -6,7 +6,7 @@ It's based on [tensorflow](https://www.tensorflow.org/tutorials/sequences/audio_
 
 ### Prerequisites
 
-* Qt (if you want to compile the game yuorself)
+* Qt (if you want to compile the game yourself)
 * Anaconda
 * Tensorflow
 * PyAutoGui
